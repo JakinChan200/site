@@ -13,7 +13,7 @@ export default function Home() {
         </div>
         <div className="flex h-screen justify-center items-center">
           <Image
-            src="site/assets/Jakin.webp"
+            src="/site/assets/Jakin.webp"
             width={500}
             height={500}
             alt="jakin image"
