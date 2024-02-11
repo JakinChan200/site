@@ -2,8 +2,38 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
+    <main /*className="flex min-h-screen flex-col items-left justify-between p-24"*/>
+      <div className="grid h-screen grid-cols-2 vertical-align bg-black justify-center items-center">
+        <div className="flex flex-col h-2/3 justify-center items-center text-6xl proxima font-bold bg-blue-300 box-content h-50 w-100 border-1 my-8 mx-8 shadow m4 rounded-xl /*hover:animate-pulse*/">
+          <ul>
+            <li className="text-6xl font-bold display:block">Jakin Chan</li>
+            <br />
+            <li className="text-xl display:block">noodles</li>
+          </ul>
+        </div>
+        <div className="flex h-screen justify-center items-center">
+          <Image
+            src="site/assets/Jakin.webp"
+            width={500}
+            height={500}
+            alt="jakin image"
+            bg-color="green"
+          />
+        </div>
+      </div>
+      
+      <button className="dark:md:hover:bg-fuchsia-600">
+          Save changes
+      </button>
+      {/* <div
+        className="bg-scroll"
+        style={{
+          backgroundImage: `url('/Rectangle 1.png')`,
+          height: "972px",
+          }}
+        >
+      </div> */}
+      {/* <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
         <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
           Get started by editing&nbsp;
           <code className="font-mono font-bold">app/page.tsx</code>
@@ -17,7 +47,7 @@ export default function Home() {
           >
             By{" "}
             <Image
-              src="/site/vercel.svg"
+              src="/vercel.svg"
               alt="Vercel Logo"
               className="dark:invert"
               width={100}
@@ -106,8 +136,8 @@ export default function Home() {
           <p className={`m-0 max-w-[30ch] text-sm opacity-50 text-balance`}>
             Instantly deploy your Next.js site to a shareable URL with Vercel.
           </p>
-        </a>
-      </div>
+        </a> 
+  </div>*/}
     </main>
   );
 }
