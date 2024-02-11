@@ -1,0 +1,43 @@
+Setup
+https://nextjs.org/learn-pages-router/basics/create-nextjs-app/setup
+https://nextjs.org/docs/pages/building-your-application/configuring/typescript
+https://tailwindcss.com/docs/guides/create-react-app
+
+Background
+https://stackoverflow.com/questions/72466367/how-to-use-background-image-with-tailwind-in-next-js
+
+Next js
+    Typewriter Effect
+    https://www.npmjs.com/package/typewriter-effect
+
+    Linking
+    https://stackoverflow.com/questions/61059111/external-link-is-not-working-in-next-js-when-you-want-to-use-link-component
+
+Tailwind CSS
+https://tw-elements.com/learn/te-foundations/tailwind-css/pricing-cards/
+https://www.geeksforgeeks.org/tailwind-css-box-sizing/
+https://play.tailwindcss.com/
+https://tw-elements.com/learn/te-foundations/te-ui-kit/split-screen/
+
+    Display
+    https://tailwindcss.com/docs/display
+
+    States
+    https://tailwindcss.com/docs/hover-focus-and-other-states
+
+    Margins
+    https://tailwindcss.com/docs/margin
+
+    Height
+    https://tailwindcss.com/docs/height
+
+    Transitions
+    https://tailwindcss.com/docs/transition-property
+
+    Animation
+    https://tailwindcss.com/docs/animation
+
+
+git issues
+https://git-lfs.com/
+https://github.com/git-lfs/git-lfs/blob/main/docs/man/git-lfs-migrate.adoc?utm_source=gitlfs_site&utm_medium=doc_man_migrate_link&utm_campaign=gitlfs

@@ -1,19 +1,83 @@
+'use client'
+
 import Image from "next/image";
+import TypingEffect from "../public/components/typewriter";
+import Typewriter from 'typewriter-effect';
+import Link from 'next/link'; 
+
+
+// import profilePicture from "../public/assets/Jakin.webp";
+// import linkedinLogo from "../public/assets/LinkedinLogo.png";
+// import githubLogo from "../public/assets/GithubLogo.png";
+// import emailLogo from "../public/assets/EmailLogo.png";
+
+import profilePicture from "/site/assets/Jakin.webp";
+import linkedinLogo from "/site/assets/LinkedinLogo.png";
+import githubLogo from "/site/assets/GithubLogo.png";
+import emailLogo from "/site/assets/EmailLogo.png";
+
+
 
 export default function Home() {
   return (
     <main /*className="flex min-h-screen flex-col items-left justify-between p-24"*/>
       <div className="grid h-screen grid-cols-2 vertical-align bg-black justify-center items-center">
-        <div className="flex flex-col h-2/3 justify-center items-center text-6xl proxima font-bold bg-blue-300 box-content h-50 w-100 border-1 my-8 mx-8 shadow m4 rounded-xl /*hover:animate-pulse*/">
-          <ul>
-            <li className="text-6xl font-bold display:block">Jakin Chan</li>
+        <div className="flex flex-col h-2/3 justify-center items-start text-6xl proxima font-bold bg-blue-300 box-content h-50 w-100 border-1 my-8 mx-8 shadow m4 rounded-xl /*hover:animate-pulse*/">
+          <div className="self-start pl-60">
+            <div className="text-6xl font-bold display:block">
+              <Typewriter
+                  options={{
+                  strings: ['Jakin Chan', 'Cool Kid'],
+                  autoStart: true,
+                  loop: true,
+                }}
+              />
+            </div>
             <br />
-            <li className="text-xl display:block">noodles</li>
-          </ul>
-        </div>
+            <div className="text-xl display:block">noodles</div>
+            <br />
+            <div className="font-bold rounded-full bg-white flex items-center justify-center font-mono w-5 pl-10"></div>
+              <Link href="https://www.linkedin.com/in/jakin200/" passHref={true}>
+                <button className="transition hover:-translate-y-2">
+                  <Image
+                    className="rounded-full shadow-lg bg-transparent mr-3"
+                    src={linkedinLogo}
+                    alt="LinkedIn Logo"
+                    width={50}
+                    height={50}
+                    priority
+                  />              
+                </button>
+              </Link>
+              <Link href="https://github.com/JakinChan200" passHref={true}>
+                <button className="transition hover:-translate-y-2">
+                  <Image
+                    className="rounded-full shadow-lg bg-transparent mr-3"
+                    src={githubLogo}
+                    alt="Github Logo"
+                    width={50}
+                    height={50}
+                    priority
+                  />
+                </button>
+              </Link>
+              <Link href="mailto:JakinChan200@gmail.com" passHref={true}>
+                <button className="transition hover:-translate-y-2">
+                  <Image
+                    className="rounded-full shadow-lg bg-transparent mr-3"
+                    src={emailLogo}
+                    alt="EmailLogo"
+                    width={50}
+                    height={50}
+                    priority
+                  />              
+                </button>
+              </Link>
+            </div>
+          </div>
         <div className="flex h-screen justify-center items-center">
           <Image
-            src="/site/assets/Jakin.webp"
+            src={profilePicture}
             width={500}
             height={500}
             alt="jakin image"
@@ -141,3 +205,4 @@ export default function Home() {
     </main>
   );
 }
+
