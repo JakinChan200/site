@@ -4,7 +4,7 @@ import Image from "next/image";
 import TypingEffect from "../public/components/typewriter";
 import Typewriter from 'typewriter-effect';
 import Link from 'next/link'; 
-
+ 
 
 // import profilePicture from "../public/assets/Jakin.webp";
 // import linkedinLogo from "../public/assets/LinkedinLogo.png";
