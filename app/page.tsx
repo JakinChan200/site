@@ -41,7 +41,7 @@ export default function Home() {
                 <button className="transition hover:-translate-y-2">
                   <Image
                     className="rounded-full shadow-lg bg-transparent mr-3"
-                    src="../public/assets/LinkedinLogo.png"
+                    src="/site/assets/LinkedinLogo.png"
                     alt="LinkedIn Logo"
                     width={50}
                     height={50}
@@ -53,7 +53,7 @@ export default function Home() {
                 <button className="transition hover:-translate-y-2">
                   <Image
                     className="rounded-full shadow-lg bg-transparent mr-3"
-                    src="../public/assets/GithubLogo.png"
+                    src="/site/assets/GithubLogo.png"
                     alt="Github Logo"
                     width={50}
                     height={50}
@@ -65,7 +65,7 @@ export default function Home() {
                 <button className="transition hover:-translate-y-2">
                   <Image
                     className="rounded-full shadow-lg bg-transparent mr-3"
-                    src="../public/assets/EmailLogo.png"
+                    src="/site/assets/EmailLogo.png"
                     alt="EmailLogo"
                     width={50}
                     height={50}
@@ -77,7 +77,7 @@ export default function Home() {
           </div>
         <div className="flex h-screen justify-center items-center">
           <Image
-            src="../public/assets/Jakin.webp"
+            src="/site/assets/Jakin.webp"
             width={500}
             height={500}
             alt="jakin image"
