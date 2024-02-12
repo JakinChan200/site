@@ -6,10 +6,10 @@ import Typewriter from 'typewriter-effect';
 import Link from 'next/link'; 
 
 
-// import profilePicture from "../public/assets/Jakin.webp";
-// import linkedinLogo from "../public/assets/LinkedinLogo.png";
-// import githubLogo from "../public/assets/GithubLogo.png";
-// import emailLogo from "../public/assets/EmailLogo.png";
+import profilePicture from "../public/assets/Jakin.webp";
+import linkedinLogo from "../public/assets/LinkedinLogo.png";
+import githubLogo from "../public/assets/GithubLogo.png";
+import emailLogo from "../public/assets/EmailLogo.png";
 
 // import profilePicture from "/site/assets/Jakin.webp";
 // import linkedinLogo from "/site/assets/LinkedinLogo.png";
@@ -41,7 +41,7 @@ export default function Home() {
                 <button className="transition hover:-translate-y-2">
                   <Image
                     className="rounded-full shadow-lg bg-transparent mr-3"
-                    src="/assets/LinkedinLogo.png"
+                    src={linkedinLogo}
                     alt="LinkedIn Logo"
                     width={50}
                     height={50}
@@ -53,7 +53,7 @@ export default function Home() {
                 <button className="transition hover:-translate-y-2">
                   <Image
                     className="rounded-full shadow-lg bg-transparent mr-3"
-                    src="/assets/GithubLogo.png"
+                    src={githubLogo}
                     alt="Github Logo"
                     width={50}
                     height={50}
@@ -65,7 +65,7 @@ export default function Home() {
                 <button className="transition hover:-translate-y-2">
                   <Image
                     className="rounded-full shadow-lg bg-transparent mr-3"
-                    src="/assets/EmailLogo.png"
+                    src={emailLogo}
                     alt="EmailLogo"
                     width={50}
                     height={50}
@@ -77,7 +77,7 @@ export default function Home() {
           </div>
         <div className="flex h-screen justify-center items-center">
           <Image
-            src="/assets/Jakin.webp"
+            src={profilePicture}
             width={500}
             height={500}
             alt="jakin image"
