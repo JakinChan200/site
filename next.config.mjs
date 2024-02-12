@@ -1,20 +1,3 @@
-// /** @type {import('next').NextConfig} */
-// const nextConfig = {
-//   output: "export",
-//   reactStrictMode: true,
-//   swcMinify: true,
-//   images: {
-//     loader: "akamai",
-//     path: "",
-//     unoptimized: true,
-//   },
-//   basePath: "",
-//   assetPrefix: "",
-// };
-
-// export default nextConfig;
-
-
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     /**
@@ -42,6 +25,21 @@ const nextConfig = {
     },
   };
   
+// /** @type {import('next').NextConfig} */
+// const nextConfig = {
+//   output: "export",
+//   reactStrictMode: true,
+//   swcMinify: true,
+//   images: {
+//     loader: "akamai",
+//     path: "",
+//     unoptimized: true,
+//   },
+//   basePath: "",
+//   assetPrefix: "",
+// };
+
+// export default nextConfig;
 //   export default nextConfig;
 
 // /** @type {import('next').NextConfig} */
