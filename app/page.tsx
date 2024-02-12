@@ -11,10 +11,10 @@ import Link from 'next/link';
 // import githubLogo from "../public/assets/GithubLogo.png";
 // import emailLogo from "../public/assets/EmailLogo.png";
 
-import profilePicture from "/site/assets/Jakin.webp";
-import linkedinLogo from "/site/assets/LinkedinLogo.png";
-import githubLogo from "/site/assets/GithubLogo.png";
-import emailLogo from "/site/assets/EmailLogo.png";
+// import profilePicture from "/site/assets/Jakin.webp";
+// import linkedinLogo from "/site/assets/LinkedinLogo.png";
+// import githubLogo from "/site/assets/GithubLogo.png";
+// import emailLogo from "/site/assets/EmailLogo.png";
 
 
 
@@ -41,7 +41,7 @@ export default function Home() {
                 <button className="transition hover:-translate-y-2">
                   <Image
                     className="rounded-full shadow-lg bg-transparent mr-3"
-                    src={linkedinLogo}
+                    src="../public/assets/LinkedinLogo.png"
                     alt="LinkedIn Logo"
                     width={50}
                     height={50}
@@ -53,7 +53,7 @@ export default function Home() {
                 <button className="transition hover:-translate-y-2">
                   <Image
                     className="rounded-full shadow-lg bg-transparent mr-3"
-                    src={githubLogo}
+                    src="../public/assets/GithubLogo.png"
                     alt="Github Logo"
                     width={50}
                     height={50}
@@ -65,7 +65,7 @@ export default function Home() {
                 <button className="transition hover:-translate-y-2">
                   <Image
                     className="rounded-full shadow-lg bg-transparent mr-3"
-                    src={emailLogo}
+                    src="../public/assets/EmailLogo.png"
                     alt="EmailLogo"
                     width={50}
                     height={50}
@@ -77,7 +77,7 @@ export default function Home() {
           </div>
         <div className="flex h-screen justify-center items-center">
           <Image
-            src={profilePicture}
+            src="../public/assets/Jakin.webp"
             width={500}
             height={500}
             alt="jakin image"
