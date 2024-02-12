@@ -6,15 +6,15 @@ import Typewriter from 'typewriter-effect';
 import Link from 'next/link'; 
 
 
-import profilePicture from "../public/assets/Jakin.webp";
-import linkedinLogo from "../public/assets/LinkedinLogo.png";
-import githubLogo from "../public/assets/GithubLogo.png";
-import emailLogo from "../public/assets/EmailLogo.png";
+// import profilePicture from "../public/assets/Jakin.webp";
+// import linkedinLogo from "../public/assets/LinkedinLogo.png";
+// import githubLogo from "../public/assets/GithubLogo.png";
+// import emailLogo from "../public/assets/EmailLogo.png";
 
-// import profilePicture from "/site/assets/Jakin.webp";
-// import linkedinLogo from "/site/assets/LinkedinLogo.png";
-// import githubLogo from "/site/assets/GithubLogo.png";
-// import emailLogo from "/site/assets/EmailLogo.png";
+import profilePicture from "/site/assets/Jakin.webp";
+import linkedinLogo from "/site/assets/LinkedinLogo.png";
+import githubLogo from "/site/assets/GithubLogo.png";
+import emailLogo from "/site/assets/EmailLogo.png";
 
 
 
