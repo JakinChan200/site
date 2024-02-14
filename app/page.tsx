@@ -4,7 +4,7 @@ import Image from "next/image";
 import TypingEffect from "../public/components/typewriter";
 import Typewriter from 'typewriter-effect';
 import Link from 'next/link'; 
-// import { Tag } from  '../public/components/tag';
+import { Tag } from  '../public/components/tag';
  
 // import { Tag } from  '../public/components/tag';
 // import profilePicture from "/assets/Jakin.webp";
@@ -14,7 +14,6 @@ import Link from 'next/link';
 // import instagramLogo from "/assets/InstagramLogo.png";
 // import UCR from "/assets/UCR.jpg"
 
-import { Tag } from "/site/components/tag";
 import profilePicture from "/site/assets/Jakin.webp";
 import linkedinLogo from "/site/assets/LinkedinLogo.png";
 import githubLogo from "/site/assets/GithubLogo.png";
