@@ -4,9 +4,9 @@ import Image from "next/image";
 import TypingEffect from "../public/components/typewriter";
 import Typewriter from 'typewriter-effect';
 import Link from 'next/link'; 
-import { Tag } from  '../public/components/tag';
+// import { Tag } from  '../public/components/tag';
  
-
+// import { Tag } from  '../public/components/tag';
 // import profilePicture from "/assets/Jakin.webp";
 // import linkedinLogo from "/assets/LinkedinLogo.png";
 // import githubLogo from "/assets/GithubLogo.png";
@@ -14,12 +14,14 @@ import { Tag } from  '../public/components/tag';
 // import instagramLogo from "/assets/InstagramLogo.png";
 // import UCR from "/assets/UCR.jpg"
 
-// import profilePicture from "/site/assets/Jakin.webp";
-// import linkedinLogo from "/site/assets/LinkedinLogo.png";
-// import githubLogo from "/site/assets/GithubLogo.png";
-// import emailLogo from "/site/assets/EmailLogo.png";
-// import instagramLogo from "/site/assets/InstagramLogo.png";
-// import UCR from "/site/assets/UCR.png";
+import { Tag } from "/site/components/tag";
+import profilePicture from "/site/assets/Jakin.webp";
+import linkedinLogo from "/site/assets/LinkedinLogo.png";
+import githubLogo from "/site/assets/GithubLogo.png";
+import emailLogo from "/site/assets/EmailLogo.png";
+import instagramLogo from "/site/assets/InstagramLogo.png";
+import UCR from "/site/assets/UCR.png";
+
 
 
 
@@ -48,7 +50,7 @@ export default function Home() {
                 <button className="transition hover:-translate-y-2">
                   <Image
                     className="rounded-full shadow-lg bg-transparent mr-4"
-                    src="/site/assets/LinkedinLogo.png"
+                    src={linkedinLogo}
                     alt="LinkedIn Logo"
                     width={50}
                     height={50}
@@ -60,7 +62,7 @@ export default function Home() {
                 <button className="transition hover:-translate-y-2">
                   <Image
                     className="rounded-full shadow-lg bg-transparent mr-4"
-                    src="/site/assets/GithubLogo.png"
+                    src={githubLogo}
                     alt="Github Logo"
                     width={50}
                     height={50}
@@ -72,7 +74,7 @@ export default function Home() {
                 <button className="transition hover:-translate-y-2">
                   <Image
                     className="rounded-full shadow-lg bg-transparent mr-4"
-                    src="/site/assets/EmailLogo.png"
+                    src={emailLogo}
                     alt="EmailLogo"
                     width={50}
                     height={50}
@@ -84,7 +86,7 @@ export default function Home() {
                 <button className="transition hover:-translate-y-2">
                   <Image
                     className="rounded-full shadow-lg bg-transparent mr-4"
-                    src="/site/assets/InstagramLogo.png"
+                    src={instagramLogo}
                     alt="InstagramLogo"
                     width={50}
                     height={50}
@@ -96,7 +98,7 @@ export default function Home() {
           </div>
           <div className="flex order-2 h-screen justify-center items-center">
             <Image
-              src="/site/assets/Jakin.webp"
+              src={profilePicture}
               width={500}
               height={500}
               alt="jakin image"
@@ -113,7 +115,7 @@ export default function Home() {
           <div className="self-center m-2">
             <Image
               className="rounded-lg"
-              src="/site/assets/UCR.jpg"
+              src={UCR}
               width={250}
               height={250}
               alt="jakin image"
@@ -138,11 +140,11 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="flex flex-none rounded-lg bg-green-200 display:block w-3/4 shadow-lg m-4">
+        <div className="flex flex-none flex-wrap rounded-lg bg-green-200 display:block w-3/4 shadow-lg m-4">
           <div className="self-center m-2">
             <Image
               className="rounded-lg"
-              src="/site/assets/UCR.jpg"
+              src={UCR}
               width={250}
               height={250}
               alt="jakin image"
