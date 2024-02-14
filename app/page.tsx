@@ -4,8 +4,10 @@ import Image from "next/image";
 import TypingEffect from "../public/components/typewriter";
 import Typewriter from 'typewriter-effect';
 import Link from 'next/link'; 
-import { Tag } from  '../public/components/tag';
- 
+//import { Tag } from  '../public/components/tag';
+import { Tag } from 'site/components/tag';
+
+
 // import { Tag } from  '../public/components/tag';
 // import profilePicture from "/assets/Jakin.webp";
 // import linkedinLogo from "/assets/LinkedinLogo.png";
@@ -14,12 +16,12 @@ import { Tag } from  '../public/components/tag';
 // import instagramLogo from "/assets/InstagramLogo.png";
 // import UCR from "/assets/UCR.jpg"
 
-import profilePicture from "/site/assets/Jakin.webp";
-import linkedinLogo from "/site/assets/LinkedinLogo.png";
-import githubLogo from "/site/assets/GithubLogo.png";
-import emailLogo from "/site/assets/EmailLogo.png";
-import instagramLogo from "/site/assets/InstagramLogo.png";
-import UCR from "/site/assets/UCR.png";
+// import profilePicture from "/site/assets/Jakin.webp";
+// import linkedinLogo from "/site/assets/LinkedinLogo.png";
+// import githubLogo from "/site/assets/GithubLogo.png";
+// import emailLogo from "/site/assets/EmailLogo.png";
+// import instagramLogo from "/site/assets/InstagramLogo.png";
+// import UCR from "/site/assets/UCR.png";
 
 
 
@@ -49,7 +51,7 @@ export default function Home() {
                 <button className="transition hover:-translate-y-2">
                   <Image
                     className="rounded-full shadow-lg bg-transparent mr-4"
-                    src={linkedinLogo}
+                    src="/site/assets/LinkedinLogo.png"
                     alt="LinkedIn Logo"
                     width={50}
                     height={50}
@@ -61,7 +63,7 @@ export default function Home() {
                 <button className="transition hover:-translate-y-2">
                   <Image
                     className="rounded-full shadow-lg bg-transparent mr-4"
-                    src={githubLogo}
+                    src="/site/assets/GithubLogo.png"
                     alt="Github Logo"
                     width={50}
                     height={50}
@@ -73,7 +75,7 @@ export default function Home() {
                 <button className="transition hover:-translate-y-2">
                   <Image
                     className="rounded-full shadow-lg bg-transparent mr-4"
-                    src={emailLogo}
+                    src="/site/assets/EmailLogo.png"
                     alt="EmailLogo"
                     width={50}
                     height={50}
@@ -85,7 +87,7 @@ export default function Home() {
                 <button className="transition hover:-translate-y-2">
                   <Image
                     className="rounded-full shadow-lg bg-transparent mr-4"
-                    src={instagramLogo}
+                    src="/site/assets/InstagramLogo.png"
                     alt="InstagramLogo"
                     width={50}
                     height={50}
@@ -97,7 +99,7 @@ export default function Home() {
           </div>
           <div className="flex order-2 h-screen justify-center items-center">
             <Image
-              src={profilePicture}
+              src="/site/assets/Jakin.webp"
               width={500}
               height={500}
               alt="jakin image"
@@ -114,7 +116,7 @@ export default function Home() {
           <div className="self-center m-2">
             <Image
               className="rounded-lg"
-              src={UCR}
+              src="/site/assets/UCR.png"
               width={250}
               height={250}
               alt="jakin image"
@@ -143,7 +145,7 @@ export default function Home() {
           <div className="self-center m-2">
             <Image
               className="rounded-lg"
-              src={UCR}
+              src="/site/assets/UCR.png"
               width={250}
               height={250}
               alt="jakin image"
