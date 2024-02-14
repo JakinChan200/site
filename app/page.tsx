@@ -116,7 +116,7 @@ export default function Home() {
           <div className="self-center m-2">
             <Image
               className="rounded-lg"
-              src="/site/assets/UCR.png"
+              src="/site/assets/UCR.jpg"
               width={250}
               height={250}
               alt="jakin image"
@@ -145,7 +145,7 @@ export default function Home() {
           <div className="self-center m-2">
             <Image
               className="rounded-lg"
-              src="/site/assets/UCR.png"
+              src="/site/assets/UCR.jpg"
               width={250}
               height={250}
               alt="jakin image"
