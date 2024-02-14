@@ -3,8 +3,8 @@
 import Image from "next/image";
 import TypingEffect from "../public/components/typewriter";
 import Typewriter from 'typewriter-effect';
-import Link from 'next/link'; 
-import { Tag } from  '../public/components/tag';
+import Link from 'next/link';
+import { Tag } from  "../public/components/tag";
 // import { Tag } from 'site/components/tag';
 
 
@@ -87,7 +87,7 @@ export default function Home() {
                 <button className="transition hover:-translate-y-2">
                   <Image
                     className="rounded-full shadow-lg bg-transparent mr-4"
-                    src="/site/assets/InstagramLogo.png"
+                    src="https://cdn.discordapp.com/attachments/1112541604318822600/1113948933572534314/174855.png?ex=65d7c2c9&is=65c54dc9&hm=dcf3c84d433d42a30d69e8a942e8c4cc1d1caa2859a8b9a7954703e819fae621&"
                     alt="InstagramLogo"
                     width={50}
                     height={50}
@@ -116,7 +116,7 @@ export default function Home() {
           <div className="self-center m-2">
             <Image
               className="rounded-lg"
-              src="/site/assets/UCR.jpg"
+              src="/assets/UCR.jpg"
               width={250}
               height={250}
               alt="jakin image"
@@ -145,7 +145,7 @@ export default function Home() {
           <div className="self-center m-2">
             <Image
               className="rounded-lg"
-              src="/site/assets/UCR.jpg"
+              src="/assets/UCR.jpg"
               width={250}
               height={250}
               alt="jakin image"
