@@ -4,7 +4,7 @@ import Image from "next/image";
 import TypingEffect from "../public/components/typewriter";
 import Typewriter from 'typewriter-effect';
 import Link from 'next/link';
-import { Tag } from  "../public/components/tag";
+// import { Tag } from  "../public/components/tag";
 import { Education } from "../public/pages/education";
 import { FrontPage } from "../public/pages/frontPage";
 
