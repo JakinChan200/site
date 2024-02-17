@@ -1,3 +1,18 @@
+      <div className="flex flex-wrap flex-col justify-center items-center h-screen">
+        <div className="w-3/4 self-center text-center font-extrabold text-4xl">
+          Education
+        </div>
+        <div className="flex flex-none flex-wrap rounded-lg bg-green-200 display:block w-3/4 shadow-lg m-4">
+          <div className="self-center m-2">
+            <Image
+              className="rounded-lg"
+              src="https://cdn.discordapp.com/attachments/1207549973063794700/1207550016802267136/UCR.jpg?ex=65e00d97&is=65cd9897&hm=84c51cfcd1dec33b5dac9df851fc2b3388b625fe03f2eb1b56c8ffcda7c0208a&"
+              width={250}
+              height={250}
+              alt="jakin image" 
+              priority
+            />
+          </div>
           <div className="flex flex-wrap flex-col">
             <div className="font-bold sans-serif text-black w-full mt-2 ml-2">
               University of California, Riverside
