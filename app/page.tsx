@@ -24,13 +24,23 @@ import { Tag } from  "../public/components/tag";
 // import UCR from "/site/assets/UCR.png";
 
 
+// export type Props = {
+//   text: string;
+// }
 
+// const Tag: React.FC<Props> = ({ text }: Props) => {
+//   return (
+//       <div className="rounded-lg bg-blue-500 text-white shadow-md font-medium mr-1 mb-1 inline-block p-1">
+//         {text}
+//       </div>
+//   );
+// };
 
 export default function Home() {
   return (
     <main className="bg-black">
-      <div className="grid h-screen grid-cols-2 vertical-align justify-center items-center">
-        <div className="flex flex-wrap flex-col order-1 h-2/3 justify-center items-start text-6xl proxima font-bold bg-blue-300 box-content h-50 w-100 border-1 my-8 mx-8 shadow m4 rounded-xl /*hover:animate-pulse*/">
+      <div className="grid grid-wrap h-screen grid-cols-2 vertical-align justify-center items-center">
+        <div className="flex flex-wrap flex-none flex-col order-2 lg:order-1 h-2/3 justify-center items-start text-6xl proxima font-bold bg-blue-300 box-content h-50 w-100 border-1 my-8 mx-8 shadow m4 rounded-xl /*hover:animate-pulse*/">
           <div className="self-center w-4/10">
             <div className="text-6xl font-bold display:block">
               Jakin Chan
@@ -97,7 +107,7 @@ export default function Home() {
               </Link>
             </div>
           </div>
-          <div className="flex order-2 h-screen justify-center items-center">
+          <div className="flex flex-wrap flex-col order-1 lg:order-2 h-screen justify-center items-center">
             <Image
               src="https://cdn.discordapp.com/attachments/1207549973063794700/1207551334262374400/jakin.webp?ex=65e00ed1&is=65cd99d1&hm=2e7423384a1bc94f693b5bca415402c604e0e710f9ecf81cd2f09ba59cd0c23d&"
               width={500}
@@ -105,66 +115,105 @@ export default function Home() {
               alt="jakin image"
               bg-color="green"
             />
+          </div>
         </div>
-      </div>
-      
-      <div className="flex flex-wrap flex-col justify-center items-center">
-        <div className="w-3/4 bg-blue-200 self-center">
+
+      <div className=" h-screen">
+        <div className="w-full self-center text-center font-extrabold text-4xl">
           Education
         </div>
-        <div className="flex flex-none flex-wrap rounded-lg bg-green-200 display:block w-3/4 shadow-lg m-4">
-          <div className="self-center m-2">
-            <Image
-              className="rounded-lg"
-              src="https://cdn.discordapp.com/attachments/1207549973063794700/1207550016802267136/UCR.jpg?ex=65e00d97&is=65cd9897&hm=84c51cfcd1dec33b5dac9df851fc2b3388b625fe03f2eb1b56c8ffcda7c0208a&"
-              width={250}
-              height={250}
-              alt="jakin image"
-              priority
-            />
-          </div>
-          <div className="flex flex-wrap flex-col">
-            <div className="font-bold sans-serif text-black w-full mt-2 ml-2">
-              University of California, Riverside
-            </div>
-            <div className="text-black ml-2">
-              MS in Compututer Science March 2024
-            </div>
-            <br />
-            <div className="text-black ml-2 font-bold">
-              Relevant Coursework:
-            </div>
-            <div className="text-black ml-1 mb-2">
-              <Tag text="Algorithm Analysis"/>
-              <Tag text="Big Data Management"/>
-              <Tag text="Intro to Machine Learning"/>
+        <div className="flex justify-center mb-4">
+          <div className="perspective-1000 group cursor-pointer h-40 w-1/2 items-center"> {/*Start*/}
+            <div className="relative transform-style-3d transition-transform duration-1000 transform text-white group-hover:rotate-y-180">
+              <div className="backface-hidden absolute w-full h-full rotate-y-0 "> {/*End*/}
+                <div className="flex flex-none flex-wrap rounded-lg display:block w-full shadow-lg h-40 bg-green-200">
+                  <div className="self-center m-2">
+                    <Image
+                      className="rounded-lg"
+                      src="https://cdn.discordapp.com/attachments/1207549973063794700/1207550016802267136/UCR.jpg?ex=65e00d97&is=65cd9897&hm=84c51cfcd1dec33b5dac9df851fc2b3388b625fe03f2eb1b56c8ffcda7c0208a&"
+                      width={250}
+                      height={250}
+                      alt="jakin image"
+                      priority
+                    />
+                  </div>
+                  <div className="flex flex-wrap flex-col">
+                    <div className="font-bold sans-serif text-black w-full mt-2 ml-2">
+                      University of California, Riverside
+                    </div>
+                    <div className="text-black ml-2">
+                      MS in Compututer Science
+                    </div>
+                    <div className="text-black ml-2">
+                      March 2024
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="backface-hidden absolute w-full h-40 rotate-y-180">
+                <div className="flex flex-none flex-wrap rounded-lg bg-green-200 display:block w-full shadow-lg">
+                  <div className="self-center  m-2">
+                    <div className="text-black ml-2 font-bold">
+                      Relevant Coursework:
+                    </div>
+                    <div className="text-black ml-1 mb-2">
+                      <Tag text="Advanced Computer Architecture"/>
+                      <Tag text="Advanced Software Testing and Analysis"/> 
+                      <Tag text="Big Data Management"/>
+                      <Tag text="Database Management Systems"/>
+                      <Tag text="Data Mining Techniques"/>
+                      <Tag text="Design and Analysis of Algorithms"/>  
+                      <Tag text="Fundamentals of Machine Learning"/>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div className="flex flex-none flex-wrap rounded-lg bg-green-200 display:block w-3/4 shadow-lg m-4">
-          <div className="self-center m-2">
-            <Image
-              className="rounded-lg"
-              src="https://cdn.discordapp.com/attachments/1207549973063794700/1207550016802267136/UCR.jpg?ex=65e00d97&is=65cd9897&hm=84c51cfcd1dec33b5dac9df851fc2b3388b625fe03f2eb1b56c8ffcda7c0208a&"
-              width={250}
-              height={250}
-              alt="jakin image"
-              priority
-            />
-          </div>
-          <div className="flex flex-wrap flex-col">
-            <div className="font-bold sans-serif text-black w-full mt-2 ml-2">
-              University of California, Riverside
-            </div>
-            <div className="text-black ml-2">
-              BS in Compututer Science March 2023
-            </div>
-            <br />
-            <div className="text-black ml-2 font-bold">
-              Relevant Coursework:
-            </div>
-            <div className="text-black ml-2 mb-2">
-              BS in Compututer Science  
+        <div className="flex justify-center mt-8">
+          <div className="perspective-1000 group cursor-pointer h-40 w-1/2 items-center"> {/*Start*/}
+            <div className="relative transform-style-3d transition-transform duration-1000 transform text-white group-hover:rotate-y-180">
+              <div className="backface-hidden absolute w-full h-full rotate-y-0 "> {/*End*/}
+                <div className="flex flex-none flex-wrap rounded-lg bg-green-200 display:block w-full shadow-lg ">
+                  <div className="self-center m-2 ">
+                    <Image
+                      className="rounded-lg"
+                      src="https://cdn.discordapp.com/attachments/1207549973063794700/1207550016802267136/UCR.jpg?ex=65e00d97&is=65cd9897&hm=84c51cfcd1dec33b5dac9df851fc2b3388b625fe03f2eb1b56c8ffcda7c0208a&"
+                      width={250}
+                      height={250}
+                      alt="jakin image"
+                      priority
+                    />
+                  </div>
+                  <div className="flex flex-wrap flex-col">
+                    <div className="font-bold sans-serif text-black w-full mt-2 ml-2">
+                      University of California, Riverside
+                    </div>
+                    <div className="text-black ml-2">
+                      BS in Compututer Science
+                    </div>
+                    <div className="text-black ml-2">
+                      March 2023
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="backface-hidden absolute w-full h-40 rotate-y-180">
+                <div className="flex flex-none flex-wrap rounded-lg bg-green-200 display:block w-full shadow-lg h-40">
+                  <div className="self-start m-2">
+                    <div className="text-black ml-2 font-bold">
+                      Relevant Coursework:
+                    </div>
+                    <div className="text-black ml-1 mb-2">
+                      <Tag text="Algorithm Engineering"/>
+                      <Tag text="Concurrent Programming and Parallel Systems"/>
+                      <Tag text="Database Management Systems"/>
+                      <Tag text="Artificial Intelligence"/>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -172,6 +221,7 @@ export default function Home() {
       <button className="dark:md:hover:bg-fuchsia-600">
           Save changes
       </button>
+
     </main>
   );
 }

@@ -13,6 +13,9 @@ Next js
     Linking
     https://stackoverflow.com/questions/61059111/external-link-is-not-working-in-next-js-when-you-want-to-use-link-component
 
+    Components
+    https://stackoverflow.com/questions/65154872/better-way-to-add-types-to-props-in-a-functional-component-in-nextjs-typescript
+
 Tailwind CSS
 https://tw-elements.com/learn/te-foundations/tailwind-css/pricing-cards/
 https://www.geeksforgeeks.org/tailwind-css-box-sizing/
@@ -39,6 +42,11 @@ https://tw-elements.com/learn/te-foundations/te-ui-kit/split-screen/
 
     Element layout
     https://stackoverflow.com/questions/37614510/move-div-to-top-for-small-screens
+
+    Card Animation
+    https://www.reddit.com/r/tailwindcss/comments/mn3hqd/card_flip/
+    https://github.com/citrushack/citrushack2023/blob/dev/components/SupportCards.tsx
+
 
 git issues
 https://git-lfs.com/
