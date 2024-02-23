@@ -7,6 +7,7 @@ import Link from 'next/link';
 // import { Tag } from  "../public/components/tag";
 import { Education } from "../public/pages/education";
 import { FrontPage } from "../public/pages/frontPage";
+import { Experience } from "../public/pages/experience";
 
 // import { Tag } from  '../public/components/tag';
 // import profilePicture from "/assets/Jakin.webp";
@@ -25,9 +26,10 @@ import { FrontPage } from "../public/pages/frontPage";
 
 export default function Home() {
   return (
-    <main className="bg-black">
+    <main className="bg-white">
       <FrontPage/>
       <Education/>
+      <Experience/>
     </main>
   );
 }
