@@ -12,11 +12,11 @@ export const Education: React.FC= () => {
             <div className="w-full self-center text-center font-extrabold text-4xl text-black">
             Education
             </div>
-            <div className="flex justify-center mb-4">
-                <div className="perspective-1000 group cursor-pointer h-40 w-1/2 items-center"> {/*Start*/}
-                    <div className="relative transform-style-3d transition-transform duration-1000 transform group-hover:rotate-y-180">
-                        <div className="backface-hidden absolute w-full h-full rotate-y-0 "> {/*End*/}
-                            <div className="flex flex-none flex-wrap rounded-lg display:block w-full shadow-xl h-40 bg-white border-blue-600 border-x-2">
+            <div className="flex justify-center m-8">
+                <div className="perspective-1000 group cursor-pointer min-h-40 w-1/2 items-center"> {/*Start*/}
+                    <div className="relative transform-style-3d transition-transform duration-1000 transform group-hover:rotate-y-180 bg-white">
+                        <div className="backface-hidden absolute w-full min-h-40 h-full rotate-y-0"> {/*End*/}
+                            <div className="flex flex-none flex-wrap rounded-lg display:block w-full shadow-xl border-blue-600 border-x-2">
                                 <div className="self-center m-2">
                                     <Image
                                     className="rounded-lg"
@@ -40,9 +40,9 @@ export const Education: React.FC= () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="backface-hidden absolute w-full h-40 rotate-y-180">
-                            <div className="flex flex-none flex-wrap rounded-lg bg-white display:block w-full shadow-xl border-blue-600 border-x-2">
-                                <div className="self-center  m-2">
+                        <div className="backface-hidden absolute w-full min-h-40 h-full rotate-y-180">
+                            <div className="flex flex-none flex-wrap rounded-lg bg-white display:block w-full shadow-xl min-h-40 border-blue-600 border-x-2">
+                                <div className="self-start m-2 ">
                                     <div className="text-black ml-2 font-bold">
                                     Relevant Coursework:
                                     </div>
@@ -61,8 +61,8 @@ export const Education: React.FC= () => {
                     </div>
                 </div>
             </div>
-            <div className="flex justify-center mt-8">
-                <div className="perspective-1000 group cursor-pointer h-40 w-1/2 items-center"> {/*Start*/}
+            <div className="flex justify-center m-8">
+                <div className="perspective-1000 group cursor-pointer min-h-40 w-1/2 items-center"> {/*Start*/}
                     <div className="relative transform-style-3d transition-transform duration-1000 transform group-hover:rotate-y-180">
                         <div className="backface-hidden absolute w-full h-full rotate-y-0 "> {/*End*/}
                             <div className="flex flex-none flex-wrap rounded-lg bg-white display:block w-full shadow-xl border-blue-600 border-x-2">
@@ -89,8 +89,8 @@ export const Education: React.FC= () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="backface-hidden absolute w-full h-40 rotate-y-180">
-                            <div className="flex flex-none flex-wrap rounded-lg bg-white display:block w-full shadow-xl h-40 border-blue-600 border-x-2">
+                        <div className="backface-hidden absolute w-full min-h-40 h-full rotate-y-180">
+                            <div className="flex flex-none flex-wrap rounded-lg bg-white display:block w-full shadow-xl min-h-40 border-blue-600 border-x-2">
                                 <div className="self-start m-2">
                                     <div className="text-black ml-2 font-bold">
                                     Relevant Coursework:

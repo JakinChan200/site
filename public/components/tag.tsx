@@ -18,7 +18,7 @@ export type Props = {
 
 export const Tag: React.FC<Props> = ({ text }: Props) => {
   return (
-      <div className="rounded-lg bg-blue-600 text-white shadow-md font-medium mr-1 mb-1 inline-block p-2">
+      <div className="rounded-lg bg-blue-600 text-white shadow-md text-sm md:text-md mr-1 mb-1 inline-block p-2">
         {text}
       </div>
   );

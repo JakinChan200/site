@@ -26,9 +26,11 @@ import { Experience } from "../public/pages/experience";
 
 export default function Home() {
   return (
-    <main className="bg-white">
-      <FrontPage/>
-      <Education/>
+    <main className="bg-slate-100">
+      {/* <div className="bg-gradient-to-b from-black via-black via-50% to-transparent "> */}
+        <FrontPage/>
+        <Education/>
+      {/* </div> */}
       <Experience/>
     </main>
   );

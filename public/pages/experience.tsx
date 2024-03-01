@@ -6,6 +6,7 @@ import Image from "next/image";
 
 
 import { useEffect, useState } from "react";
+import TimelineEntry from "../components/timelineEntry";
 
 const tracks = ["Activities Leader", "Operations Lead", "Resident Advisor", "GWC Volunteer"];
 
@@ -15,12 +16,12 @@ const ScrollingText = () => {
   useEffect(() => {
     setInterval(() => {
       setCurrent((curr) => (curr === 2 ? 0 : curr + 1));
-    }, 3000);
+    }, 2000);
   }, []);
 
   return (
     <div className="text-blue-400 w-full text-right font-bold -mb-10 md:-mb-20">
-      <p className="text-xl md:text-3xl mb-0 text-black">Experience:</p>
+      {/* <p className="text-xl md:text-3xl mb-0 text-black">Experience:</p> */}
       <div className="h-10 md:h-20 overflow-hidden text-2xl md:text-7xl">
         {tracks.map((track, index) => (
           <div
@@ -42,10 +43,40 @@ export const Experience: React.FC= () => {
   return (
     <div className=" h-screen flex items-center justify-center">
       <div className="">
-        {/* <div className="w-full self-center text-center font-extrabold text-4xl text-black">
+        <div className="w-full self-center text-center font-extrabold text-4xl text-black mb-8">
           Experience
-        </div> */}
+        </div>
         <ScrollingText/>
+        <div className="-my-6">
+          <TimelineEntry
+            date="May, 2020"
+            title="The origin"
+            subtitle="Acme was founded in Milan, Italy"
+            description="Pretium lectus quam id leo. Urna et pharetra pharetra massa massa. Adipiscing enim eu neque aliquam vestibulum morbi blandit cursus risus."
+            />
+
+          <TimelineEntry
+            date="May, 2021"
+            title="The milestone"
+            subtitle="Reached 5K customers"
+            description="Pretium lectus quam id leo. Urna et pharetra pharetra massa massa. Adipiscing enim eu neque aliquam vestibulum morbi blandit cursus risus."
+            />
+            
+          <TimelineEntry
+            date="May"
+            title="Bruh"
+            subtitle="Breuh 2"
+            description="breeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeh"
+            />
+
+          <TimelineEntry
+            date="May, 2023"
+            title="The IPO"
+            subtitle="Acme went public at the New York Stock Exchange"
+            description="Pretium lectus quam id leo. Urna et pharetra pharetra massa massa. Adipiscing enim eu neque aliquam vestibulum morbi blandit cursus risus."
+            />
+
+          </div>
       </div>
     </div>
   );

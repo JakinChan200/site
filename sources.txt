@@ -47,6 +47,9 @@ https://tw-elements.com/learn/te-foundations/te-ui-kit/split-screen/
     https://www.reddit.com/r/tailwindcss/comments/mn3hqd/card_flip/
     https://github.com/citrushack/citrushack2023/blob/dev/components/SupportCards.tsx
 
+    Timeline
+    https://cruip.com/3-examples-of-brilliant-vertical-timelines-with-tailwind-css/
+
 
 git issues
 https://git-lfs.com/
