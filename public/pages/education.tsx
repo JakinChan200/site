@@ -4,19 +4,21 @@ import React from "react";
 import Link from 'next/link';
 import Image from "next/image";
 import { Tag } from  "../components/tag";
+import { useTheme } from 'next-themes';
 
 export const Education: React.FC= () => {
+const { theme } = useTheme();
   return (
     <div className=" h-screen w-screen flex items-center">
         <div className= "w-screen">
-            <div className="w-full self-center text-center font-extrabold text-4xl text-black">
+            <div className="w-full self-center text-center font-extrabold text-4xl text-text">
             Education
             </div>
             <div className="flex justify-center m-8">
                 <div className="perspective-1000 group cursor-pointer min-h-40 w-1/2 items-center"> {/*Start*/}
-                    <div className="relative transform-style-3d transition-transform duration-1000 transform group-hover:rotate-y-180 bg-white">
+                    <div className="relative transform-style-3d transition-transform duration-1000 transform group-hover:rotate-y-180">
                         <div className="backface-hidden absolute w-full min-h-40 h-full rotate-y-0"> {/*End*/}
-                            <div className="flex flex-none flex-wrap rounded-lg display:block w-full shadow-xl border-blue-600 border-x-2">
+                            <div className="flex flex-none flex-wrap rounded-lg display:block w-full shadow-xl bg-white border-blue-600 border-x-2">
                                 <div className="self-center m-2">
                                     <Image
                                     className="rounded-lg"

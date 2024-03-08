@@ -8,6 +8,7 @@ import Link from 'next/link';
 import { Education } from "../public/pages/education";
 import { FrontPage } from "../public/pages/frontPage";
 import { Experience } from "../public/pages/experience";
+import { ThemeButton } from "@/public/components/themeButton";
 
 // import { Tag } from  '../public/components/tag';
 // import profilePicture from "/assets/Jakin.webp";
@@ -28,6 +29,7 @@ export default function Home() {
   return (
     <main className="bg-slate-100">
       {/* <div className="bg-gradient-to-b from-black via-black via-50% to-transparent "> */}
+        {/* <ThemeButton/> */}
         <FrontPage/>
         <Education/>
       {/* </div> */}
