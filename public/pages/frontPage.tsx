@@ -11,11 +11,11 @@ export const FrontPage: React.FC= () => {
         <div className="flex flex-wrap justify-center items-center h-screen">
             <div className="flex flex-wrap order-2 lg:order-1 h-2/3 justify-center items-start text-6xl proxima font-bold bg-blue-300 box-content w-5/12 border-1 shadow rounded-xl /*hover:animate-pulse*/">
                 <div className="self-center w-5/12">
-                    <div className="text-6xl font-bold display:block text-title">
+                    <div className="text-6xl font-bold display:block text-text">
                         Jakin Chan
                     </div>
                     <br />
-                    <div className="text-xl display:block">
+                    <div className="text-xl display:block text-text">
                         <Typewriter
                             options={{
                             strings: ['Student', 'Cool Kid', 'Very Cool Kid'],
@@ -25,7 +25,7 @@ export const FrontPage: React.FC= () => {
                         />
                     </div>
                     <br />
-                    <div className="font-bold rounded-full bg-white flex items-center justify-center font-mono w-5 pl-10"></div>
+                    {/* <div className="font-bold rounded-full flex items-center justify-center font-mono w-5 pl-10"></div> */}
                     <Link href="https://www.linkedin.com/in/jakin200/" passHref={true}>
                         <button className="transition hover:-translate-y-2">
                             <Image

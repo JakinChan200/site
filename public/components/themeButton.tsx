@@ -13,28 +13,28 @@ export function ThemeButton() {
   if (!mounted) return null;
 
   return (
-    <div className="fixed space-y-4 m-4">
+    <div className="fixed space-y-4 m-4 *:flex *:flex-col *:justify-center *:items-center *:w-11 *:h-11 *:rounded-md *:md:shadow *:cursor-pointer">
         {/* <div className="text-black">
             The theme is {theme}
         </div> */}
         <motion.button
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.995 }}
-          className="flex flex-col justify-center items-center w-11 h-11 rounded-md md:shadow text-2xl bg-purple text-white cursor-pointer hover:bg-hoverPrimary"
+          className=" bg-slate-400 hover:bg-hoverPrimary"
           onClick={() => setTheme('light')}
         >
         </motion.button>
         <motion.button
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.995 }}
-          className="flex flex-col justify-center items-center w-11 h-11 rounded-md md:shadow text-2xl bg-purple text-white cursor-pointer hover:bg-hoverPrimary"
+          className="bg-slate-700 hover:bg-hoverPrimary"
           onClick={() => setTheme('dark')}
         >
         </motion.button>
         <motion.button
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.995 }}
-          className="flex flex-col justify-center items-center w-11 h-11 rounded-md md:shadow text-2xl bg-purple text-white cursor-pointer hover:bg-hoverPrimary"
+          className=" bg-blue-400 hover:bg-hoverPrimary"
           onClick={() => setTheme('purple')}
         >
         </motion.button>

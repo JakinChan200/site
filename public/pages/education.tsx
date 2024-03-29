@@ -18,7 +18,7 @@ const { theme } = useTheme();
                 <div className="perspective-1000 group cursor-pointer min-h-40 w-1/2 items-center"> {/*Start*/}
                     <div className="relative transform-style-3d transition-transform duration-1000 transform group-hover:rotate-y-180">
                         <div className="backface-hidden absolute w-full min-h-40 h-full rotate-y-0"> {/*End*/}
-                            <div className="flex flex-none flex-wrap rounded-lg display:block w-full shadow-xl bg-white border-blue-600 border-x-2">
+                            <div className="flex flex-none flex-wrap rounded-lg display:block w-full shadow-xl bg-background border-accentPrimary border-x-2">
                                 <div className="self-center m-2">
                                     <Image
                                     className="rounded-lg"
@@ -29,8 +29,8 @@ const { theme } = useTheme();
                                     priority
                                     />
                                 </div>
-                                <div className="flex flex-wrap flex-col text-sky-600 *:ml-2">
-                                    <div className="font-bold sans-serif text-black w-full mt-2">
+                                <div className="flex flex-wrap flex-col text-title *:ml-2">
+                                    <div className="font-bold sans-serif text-title w-full mt-2">
                                     University of California, Riverside
                                     </div>
                                     <div>
@@ -43,9 +43,9 @@ const { theme } = useTheme();
                             </div>
                         </div>
                         <div className="backface-hidden absolute w-full min-h-40 h-full rotate-y-180">
-                            <div className="flex flex-none flex-wrap rounded-lg bg-white display:block w-full shadow-xl min-h-40 border-blue-600 border-x-2">
+                            <div className="flex flex-none flex-wrap rounded-lg bg-background display:block w-full shadow-xl min-h-40 border-accentPrimary border-x-2">
                                 <div className="self-start m-2 ">
-                                    <div className="text-black ml-2 font-bold">
+                                    <div className="text-title ml-2 font-bold">
                                     Relevant Coursework:
                                     </div>
                                     <div className="ml-1 mb-2">
@@ -67,7 +67,7 @@ const { theme } = useTheme();
                 <div className="perspective-1000 group cursor-pointer min-h-40 w-1/2 items-center"> {/*Start*/}
                     <div className="relative transform-style-3d transition-transform duration-1000 transform group-hover:rotate-y-180">
                         <div className="backface-hidden absolute w-full h-full rotate-y-0 "> {/*End*/}
-                            <div className="flex flex-none flex-wrap rounded-lg bg-white display:block w-full shadow-xl border-blue-600 border-x-2">
+                            <div className="flex flex-none flex-wrap rounded-lg bg-background display:block w-full shadow-xl border-accentPrimary border-x-2">
                                 <div className="self-center m-2 ">
                                     <Image
                                     className="rounded-lg"
@@ -78,8 +78,8 @@ const { theme } = useTheme();
                                     priority
                                     />
                                 </div>
-                                <div className="flex flex-wrap flex-col text-sky-600 *:ml-2">
-                                    <div className="font-bold sans-serif text-black w-full mt-2">
+                                <div className="flex flex-wrap flex-col text-title *:ml-2">
+                                    <div className="font-bold sans-serif text-title w-full mt-2">
                                     University of California, Riverside
                                     </div>
                                     <div>
@@ -92,9 +92,9 @@ const { theme } = useTheme();
                             </div>
                         </div>
                         <div className="backface-hidden absolute w-full min-h-40 h-full rotate-y-180">
-                            <div className="flex flex-none flex-wrap rounded-lg bg-white display:block w-full shadow-xl min-h-40 border-blue-600 border-x-2">
+                            <div className="flex flex-none flex-wrap rounded-lg bg-background display:block w-full shadow-xl min-h-40 border-accentPrimary border-x-2">
                                 <div className="self-start m-2">
-                                    <div className="text-black ml-2 font-bold">
+                                    <div className="text-title ml-2 font-bold">
                                     Relevant Coursework:
                                     </div>
                                     <div className=" ml-1 mb-2">
