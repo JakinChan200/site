@@ -4,13 +4,14 @@ import React from "react";
 import Link from 'next/link';
 import Image from "next/image";
 import Typewriter from 'typewriter-effect';
+import { useTheme } from 'next-themes';
 
 export const FrontPage: React.FC= () => {
     return (
         <div className="flex flex-wrap justify-center items-center h-screen">
             <div className="flex flex-wrap order-2 lg:order-1 h-2/3 justify-center items-start text-6xl proxima font-bold bg-blue-300 box-content w-5/12 border-1 shadow rounded-xl /*hover:animate-pulse*/">
                 <div className="self-center w-5/12">
-                    <div className="text-6xl font-bold display:block">
+                    <div className="text-6xl font-bold display:block text-title">
                         Jakin Chan
                     </div>
                     <br />

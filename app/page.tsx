@@ -29,9 +29,9 @@ export default function Home() {
   return (
     <main className="bg-slate-100">
       {/* <div className="bg-gradient-to-b from-black via-black via-50% to-transparent "> */}
-        {/* <ThemeButton/> */}
-        <FrontPage/>
-        <Education/>
+      <ThemeButton/>
+      <FrontPage/>
+      <Education/>
       {/* </div> */}
       <Experience/>
     </main>

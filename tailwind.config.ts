@@ -29,6 +29,7 @@ const config: Config = {
         purple: 'var(--purple)',
         lightPurple: 'var(--lightPurple)',
         text: 'var(--text)',
+        title: 'var(--title)',
         hoverPrimary: 'var(--hoverPrimary)',
         goldHover: 'var(--goldHover)',
         brownHover: 'var(--brownHover)',

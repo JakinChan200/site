@@ -11,7 +11,7 @@ const { theme } = useTheme();
   return (
     <div className=" h-screen w-screen flex items-center">
         <div className= "w-screen">
-            <div className="w-full self-center text-center font-extrabold text-4xl text-text">
+            <div className="w-full self-center text-center font-extrabold text-4xl text-title">
             Education
             </div>
             <div className="flex justify-center m-8">

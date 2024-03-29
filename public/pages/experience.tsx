@@ -3,6 +3,8 @@
 import React from "react";
 import Link from 'next/link';
 import Image from "next/image";
+import { useTheme } from 'next-themes';
+
 
 
 import { useEffect, useState } from "react";
@@ -43,7 +45,7 @@ export const Experience: React.FC= () => {
   return (
     <div className=" h-screen flex items-center justify-center">
       <div className="">
-        <div className="w-full self-center text-center font-extrabold text-4xl text-black mb-8">
+        <div className="w-full self-center text-center font-extrabold text-4xl text-title mb-8">
           Experience
         </div>
         <ScrollingText/>
