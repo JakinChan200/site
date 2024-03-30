@@ -53,8 +53,8 @@ body {
 html,
 body {
   width: 100% !important;
-  background-color: var(--sky);
-}
+  background-color: var(--background);
+} 
 
 .min-safe-h-screen {
   /* equivalent to 100dvh in major browsers */

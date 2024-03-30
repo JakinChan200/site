@@ -8,9 +8,9 @@ import { useTheme } from 'next-themes';
 
 export const FrontPage: React.FC= () => {
     return (
-        <div className="flex flex-wrap justify-center items-center h-screen">
-            <div className="flex flex-wrap order-2 lg:order-1 h-2/3 justify-center items-start text-6xl proxima font-bold bg-blue-300 box-content w-5/12 border-1 shadow rounded-xl /*hover:animate-pulse*/">
-                <div className="self-center w-5/12">
+        <div className="flex flex-wrap justify-center items-center h-screen p-4">
+            <div className="flex flex-wrap order-2 lg:order-1 h-5/12 lg:h-2/3 justify-center items-start text-6xl proxima font-bold bg-blue-300 box-content w-full lg:w-5/12 border-1 shadow rounded-xl m-12">
+                <div className="self-center w-fit m-8">
                     <div className="text-6xl font-bold display:block text-text">
                         Jakin Chan
                     </div>
@@ -76,7 +76,7 @@ export const FrontPage: React.FC= () => {
                     </Link>
                 </div>
             </div>
-            <div className="flex flex-wrap flex-col order-1 lg:order-2 h-screen justify-center items-center w-5/12 p-8">
+            <div className="flex flex-wrap flex-col order-1 lg:order-2 h-5/12 lg:h-screen justify-center items-center w-full lg:w-5/12 p-8">
                 <Image
                 src="https://cdn.discordapp.com/attachments/1207549973063794700/1207551334262374400/jakin.webp?ex=65e00ed1&is=65cd99d1&hm=2e7423384a1bc94f693b5bca415402c604e0e710f9ecf81cd2f09ba59cd0c23d&"
                 width={500}

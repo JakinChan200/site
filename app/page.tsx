@@ -28,7 +28,6 @@ import { ThemeButton } from "@/public/components/themeButton";
 export default function Home() {
   return (
     <main className="bg-background">
-      {/* <div className="bg-gradient-to-b from-black via-black via-50% to-transparent "> */}
       <ThemeButton/>
       <FrontPage/>
       <Education/>
