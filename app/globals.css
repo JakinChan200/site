@@ -16,6 +16,7 @@ body {
     --link: #71461f;
     --text: #000000;
     --title: #373a5e;
+    --shadow: #636363;
     /* --text: #373a5e; */
   }
 
@@ -27,6 +28,7 @@ body {
     --link: #71461f;
     --text: #000000;
     --title: #373a5e;
+    --shadow:	#636363;
   }
 
   [data-theme='dark'] {
@@ -37,6 +39,7 @@ body {
     --link: #ffac01;
     --text: #ffffff;
     --title: #ffffff;
+    --shadow: #a3deff;
   }
 
   [data-theme='purple'] {
@@ -47,6 +50,7 @@ body {
     --link: #ffac01;
     --text: #ffffff;
     --title: #ba5fde;
+    --shadow: #A020F0;
   }
 }
 

@@ -12,17 +12,17 @@ const { theme } = useTheme();
     <div className=" h-screen w-full flex items-center">
         <div className= "w-full">
             <div className="w-full self-center text-center font-extrabold text-4xl text-title">
-            Education
+                Education
             </div>
-            <div className="flex justify-center m-8 h-max">
-                <div className="perspective-1000 group cursor-pointer h-full w-10/12 xl:w-1/2 items-center overflow-visible transition-all"> {/*Start*/}
+            <div className="flex justify-center m-8">
+                <div className="perspective-1000 group cursor-pointer w-10/12 xl:w-1/2 items-center transition-all"> {/*Start*/}
                     <div className="relative transform-style-3d transition-transform duration-1000 transform group-hover:rotate-y-180">
                         <div className="backface-hidden absolute w-full min-h-40 h-full rotate-y-0"> {/*End*/}
                             <div className="flex flex-none flex-wrap rounded-lg display:block w-full shadow-xl bg-background border-accentPrimary border-x-2">
                                 <div className="self-center m-2">
                                     <Image
                                     className="rounded-lg"
-                                    src="https://cdn.discordapp.com/attachments/1207549973063794700/1207550016802267136/UCR.jpg?ex=65e00d97&is=65cd9897&hm=84c51cfcd1dec33b5dac9df851fc2b3388b625fe03f2eb1b56c8ffcda7c0208a&"
+                                    src="./assets/UCR.jpg"
                                     width={250}
                                     height={250}
                                     alt="jakin image"
@@ -31,18 +31,18 @@ const { theme } = useTheme();
                                 </div>
                                 <div className="flex flex-wrap flex-col text-title *:ml-2">
                                     <div className="font-bold sans-serif text-title w-full mt-2">
-                                    University of California, Riverside
+                                        University of California, Riverside
                                     </div>
                                     <div>
-                                    MS in Compututer Science
+                                        MS in Compututer Science
                                     </div>
                                     <div>
-                                    March 2024
+                                        March 2024
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div className="backface-hidden w-full h-full min-h-40 rotate-y-180">
+                        <div className="backface-hidden rotate-y-180">
                             <div className="flex flex-none flex-wrap rounded-lg bg-background display:block w-full shadow-xl min-h-40 border-accentPrimary border-x-2">
                                 <div className="self-start m-2 ">
                                     <div className="text-title ml-2 font-bold">
@@ -64,14 +64,14 @@ const { theme } = useTheme();
                 </div>
             </div>
             <div className="flex justify-center m-8">
-                <div className="perspective-1000 group cursor-pointer min-h-40 w-10/12 xl:w-1/2 items-center transition-all"> {/*Start*/}
+                <div className="perspective-1000 group cursor-pointer w-10/12 xl:w-1/2 items-center transition-all"> {/*Start*/}
                     <div className="relative transform-style-3d transition-transform duration-1000 transform group-hover:rotate-y-180">
-                        <div className="backface-hidden absolute w-full h-full rotate-y-0 "> {/*End*/}
-                            <div className="flex flex-none flex-wrap rounded-lg bg-background display:block w-full shadow-xl border-accentPrimary border-x-2">
-                                <div className="self-center m-2 ">
+                        <div className="backface-hidden absolute w-full min-h-40 rotate-y-0"> {/*End*/}
+                            <div className="flex flex-none flex-wrap rounded-lg bg-background display:block shadow-xl border-accentPrimary border-x-2">
+                                <div className="self-center m-2">
                                     <Image
                                     className="rounded-lg"
-                                    src="https://cdn.discordapp.com/attachments/1207549973063794700/1207550016802267136/UCR.jpg?ex=65e00d97&is=65cd9897&hm=84c51cfcd1dec33b5dac9df851fc2b3388b625fe03f2eb1b56c8ffcda7c0208a&"
+                                    src="./assets/UCR.jpg"
                                     width={250}
                                     height={250}
                                     alt="jakin image"
@@ -80,19 +80,19 @@ const { theme } = useTheme();
                                 </div>
                                 <div className="flex flex-wrap flex-col text-title *:ml-2">
                                     <div className="font-bold sans-serif text-title w-full mt-2">
-                                    University of California, Riverside
+                                        University of California, Riverside
                                     </div>
                                     <div>
-                                    BS in Compututer Science
+                                        BS in Compututer Science
                                     </div>
                                     <div>
-                                    March 2023
+                                        March 2023
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div className="backface-hidden w-full min-h-40 h-full rotate-y-180">
-                            <div className="flex flex-none flex-wrap rounded-lg bg-background display:block w-full shadow-xl min-h-40 border-accentPrimary border-x-2">
+                        <div className="backface-hidden rotate-y-180">
+                            <div className="flex flex-none flex-wrap rounded-lg bg-background display:block w-full min-h-40 shadow-xl border-accentPrimary border-x-2">
                                 <div className="self-start m-2">
                                     <div className="text-title ml-2 font-bold">
                                     Relevant Coursework:
