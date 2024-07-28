@@ -22,7 +22,6 @@ const config: Config = {
         title: 'var(--title)',
         link: 'var(--link)',
         hoverPrimary: 'var(--hoverPrimary)',
-        shadow: 'var(--shadow)',
       },
     },
   },

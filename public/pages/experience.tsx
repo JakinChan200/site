@@ -44,7 +44,7 @@ const ScrollingText = () => {
 export const Experience: React.FC= () => {
   return (
     <div className=" h-screen flex items-center justify-center">
-      <div className="mx-44">
+      <div className="">
         <div className="w-full self-center text-center font-extrabold text-4xl text-title mb-8">
           Experience
         </div>
