@@ -4,7 +4,7 @@ import React from "react";
 import Link from 'next/link';
 import Image from "next/image";
 import Typewriter from 'typewriter-effect';
-// import Spline from '@splinetool/react-spline';
+import Spline from '@splinetool/react-spline';
 import { useTheme } from 'next-themes';
 
 export const FrontPage: React.FC= () => {
@@ -80,6 +80,7 @@ export const FrontPage: React.FC= () => {
                     {/* </div> */}
                 </div>
             {/* </div> */}
+
             <div className="flex flex-wrap flex-col order-1 lg:order-2 h-5/12 lg:h-screen justify-center items-center w-full lg:w-5/12 p-8">
                 <Image
                 src="./assets/Jakin.webp"
