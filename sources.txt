@@ -46,6 +46,7 @@ https://tw-elements.com/learn/te-foundations/te-ui-kit/split-screen/
     Card Animation
     https://www.reddit.com/r/tailwindcss/comments/mn3hqd/card_flip/
     https://github.com/citrushack/citrushack2023/blob/dev/components/SupportCards.tsx
+    https://www.smashingmagazine.com/2020/02/magic-flip-cards-common-sizing-problem/
 
     Timeline
     https://cruip.com/3-examples-of-brilliant-vertical-timelines-with-tailwind-css/
@@ -53,6 +54,9 @@ https://tw-elements.com/learn/te-foundations/te-ui-kit/split-screen/
     Themes
     https://dev.to/ultroneoustech/creating-multiple-themes-in-tailwind-css-and-nextjs-2e98\
     https://github.com/pacocoursey/next-themes
+
+    Shadow
+    https://tailwindcss.com/docs/box-shadow-color
 
 
 git issues
