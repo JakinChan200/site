@@ -4,7 +4,7 @@ import React from "react";
 import Link from 'next/link';
 import Image from "next/image";
 import Typewriter from 'typewriter-effect';
-import Spline from '@splinetool/react-spline';
+// import Spline from '@splinetool/react-spline';
 import { useTheme } from 'next-themes';
 
 export const FrontPage: React.FC= () => {
