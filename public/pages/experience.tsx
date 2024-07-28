@@ -1,8 +1,8 @@
 'use client'
 /** @type {import('next').NextConfig} */
 import React from "react";
-import Link from 'next/link';
-import Image from "next/image";
+// import Link from 'next/link';
+// import Image from "next/image";
 import { useTheme } from 'next-themes';
 
 

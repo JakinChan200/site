@@ -4,7 +4,6 @@ import React from "react";
 import Link from 'next/link';
 import Image from "next/image";
 import Typewriter from 'typewriter-effect';
-import Spline from '@splinetool/react-spline';
 import { useTheme } from 'next-themes';
 
 export const FrontPage: React.FC= () => {
@@ -90,9 +89,6 @@ export const FrontPage: React.FC= () => {
                 bg-color="green"
                 />
             </div>
-            {/* <div>
-                <Spline scene="https://prod.spline.design/rdAzbaTRtz-oPcYP/scene.splinecode" />
-            </div> */}
         </div>
 
     );
