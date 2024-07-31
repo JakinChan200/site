@@ -67,6 +67,7 @@ export const FrontPage: React.FC= () => {
                     <Link href="https://www.instagram.com/jakinc200/?hl=en" passHref={true}>
                         <button className="transition hover:-translate-y-2">
                             <Image
+                            className="mr-4 bg-transparent rounded-full shadow-lg shadow-shadow"
                             src="./assets/InstagramLogo.png"
                             alt="InstagramLogo"
                             width={50}

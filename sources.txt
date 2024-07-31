@@ -58,6 +58,10 @@ https://tw-elements.com/learn/te-foundations/te-ui-kit/split-screen/
     Shadow
     https://tailwindcss.com/docs/box-shadow-color
 
+    Shine Effect
+    https://ibelick.com/blog/create-shine-effect-on-card-with-tailwind-css
+
+UI/UX
     Bento box
     https://www.youtube.com/watch?v=LJuM_Rqdd8o&list=PLVC87ULGjfFPD5rQH7Hh6MUPPOnkaynXo&index=4
 
