@@ -34,7 +34,7 @@ export function ThemeButton() {
         <motion.button
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.995 }}
-          className=" bg-blue-400 hover:bg-hoverPrimary"
+          className="bg-blue-400 hover:bg-hoverPrimary"
           onClick={() => setTheme('purple')}
         >
         </motion.button>

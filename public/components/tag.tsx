@@ -8,7 +8,7 @@ export type Props = {
 
 // const Tag = ({text}) => {
 //   return (
-//     <div className="rounded-lg bg-blue-600 text-white shadow-md font-medium mr-1 mb-1 inline-block p-2">
+//     <div className="inline-block p-2 mb-1 mr-1 font-medium text-white bg-blue-600 rounded-lg shadow-md">
 //       {text}
 //     </div>
 //   );
@@ -18,7 +18,7 @@ export type Props = {
 
 export const Tag: React.FC<Props> = ({ text }: Props) => {
   return (
-      <div className="rounded-lg bg-blue-600 text-white shadow-md text-xs lg:text-md mr-1 mb-1 inline-block p-2">
+      <div className="inline-block p-2 mb-1 mr-1 text-xs text-white bg-blue-600 rounded-lg shadow-md lg:text-md">
         {text}
       </div>
   );
@@ -29,7 +29,7 @@ export default Tag;
 
 // export const Tag: React.FC<Props> = ({text}) => {
 //     return (
-//       <div className="rounded-lg bg-blue-600 text-white shadow-md font-medium mr-1 mb-1 inline-block p-2">
+//       <div className="inline-block p-2 mb-1 mr-1 font-medium text-white bg-blue-600 rounded-lg shadow-md">
 //         {text}
 //       </div>
 //     );

@@ -6,8 +6,8 @@ import Spline from '@splinetool/react-spline';
 
 export const TestPage: React.FC= () => {
     return (
-        <div className="flex flex-wrap justify-center items-center h-screen w-screen p-4">
-            <div className="w-full self-center text-center font-extrabold text-4xl text-title">
+        <div className="flex flex-wrap items-center justify-center w-screen h-screen p-4">
+            <div className="self-center w-full text-4xl font-extrabold text-center text-title">
                 Other
             </div>
             <div>

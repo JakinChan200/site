@@ -22,13 +22,13 @@ const ScrollingText = () => {
   }, []);
 
   return (
-    <div className="text-blue-400 w-full text-right font-bold -mb-10 md:-mb-20">
-      {/* <p className="text-xl md:text-3xl mb-0 text-black">Experience:</p> */}
-      <div className="h-10 md:h-20 overflow-hidden text-2xl md:text-7xl">
+    <div className="w-full -mb-10 font-bold text-right text-blue-400 md:-mb-20">
+      {/* <p className="mb-0 text-xl text-black md:text-3xl">Experience:</p> */}
+      <div className="h-10 overflow-hidden text-2xl md:h-20 md:text-7xl">
         {tracks.map((track, index) => (
           <div
             key={index}
-            className="duration-500 h-10 md:h-20"
+            className="h-10 duration-500 md:h-20"
             style={{
               transform: `translateY(${-100 * current}%)`,
             }}
@@ -43,9 +43,9 @@ const ScrollingText = () => {
 
 export const Experience: React.FC= () => {
   return (
-    <div className=" h-screen flex items-center justify-center">
+    <div className="flex items-center justify-center h-screen ">
       <div className="mx-44">
-        <div className="w-full self-center text-center font-extrabold text-4xl text-title mb-8">
+        <div className="self-center w-full mb-8 text-4xl font-extrabold text-center text-title">
           Experience
         </div>
         <ScrollingText/>
