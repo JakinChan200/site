@@ -8,8 +8,9 @@
 import { Education } from "../public/pages/education";
 import { FrontPage } from "../public/pages/frontPage";
 import { Experience } from "../public/pages/experience";
-import { ThemeButton } from "@/public/components/themeButton";
+import { Interests } from "../public/pages/interests";
 import { TestPage } from "../public/pages/testPage";
+import { ThemeButton } from "@/public/components/themeButton";
 
 // import { Tag } from  '../public/components/tag';
 // import profilePicture from "/assets/Jakin.webp";
@@ -32,8 +33,8 @@ export default function Home() {
       <ThemeButton/>
       <FrontPage/>
       <Education/>
-      {/* </div> */}
       <Experience/>
+      <Interests/>
       <TestPage/>
     </main>
   );

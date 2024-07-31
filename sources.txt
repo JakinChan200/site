@@ -58,6 +58,9 @@ https://tw-elements.com/learn/te-foundations/te-ui-kit/split-screen/
     Shadow
     https://tailwindcss.com/docs/box-shadow-color
 
+    Bento box
+    https://www.youtube.com/watch?v=LJuM_Rqdd8o&list=PLVC87ULGjfFPD5rQH7Hh6MUPPOnkaynXo&index=4
+
 
 git issues
 https://git-lfs.com/
