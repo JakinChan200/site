@@ -35,7 +35,7 @@ export default function Home() {
       <Education/>
       <Experience/>
       <Interests/>
-      <TestPage/>
+      {/* <TestPage/> */}
     </main>
   );
 }

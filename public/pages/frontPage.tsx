@@ -30,7 +30,7 @@ export const FrontPage: React.FC= () => {
                     <Link href="https://www.linkedin.com/in/jakin200/" passHref={true}>
                         <button className="transition hover:-translate-y-2">
                             <Image
-                            className="mr-4 bg-transparent rounded-full shadow-lg shadow-shadow"
+                            className="mr-4 bg-transparent rounded-full shadow-lg shadow-shadow pointer-events-none"
                             src="./assets/LinkedinLogo.png"
                             alt="LinkedIn Logo"
                             width={50}
@@ -43,7 +43,7 @@ export const FrontPage: React.FC= () => {
                     <Link href="https://github.com/JakinChan200" passHref={true}>
                         <button className="transition hover:-translate-y-2">
                             <Image
-                            className="mr-4 bg-transparent rounded-full shadow-lg shadow-shadow"
+                            className="mr-4 bg-transparent rounded-full shadow-lg shadow-shadow pointer-events-none"
                             src="./assets/GithubLogo.png"
                             alt="Github Logo"
                             width={50}
@@ -55,7 +55,7 @@ export const FrontPage: React.FC= () => {
                     <Link href="mailto:JakinChan200@gmail.com" passHref={true}>
                         <button className="transition hover:-translate-y-2">
                             <Image
-                            className="mr-4 bg-transparent rounded-full shadow-lg shadow-shadow"
+                            className="mr-4 bg-transparent rounded-full shadow-lg shadow-shadow pointer-events-none"
                             src="./assets/EmailLogo.png"
                             alt="EmailLogo"
                             width={50}
@@ -67,12 +67,12 @@ export const FrontPage: React.FC= () => {
                     <Link href="https://www.instagram.com/jakinc200/?hl=en" passHref={true}>
                         <button className="transition hover:-translate-y-2">
                             <Image
-                            className="mr-4 bg-transparent rounded-full shadow-lg shadow-shadow"
-                            src="./assets/InstagramLogo.png"
-                            alt="InstagramLogo"
-                            width={50}
-                            height={50}
-                            priority
+                                className="mr-4 bg-transparent rounded-full shadow-lg shadow-shadow pointer-events-none"
+                                src="./assets/InstagramLogo.png"
+                                alt="InstagramLogo"
+                                width={50}
+                                height={50}
+                                priority
                             />              
                         </button>
                     </Link>
@@ -82,11 +82,12 @@ export const FrontPage: React.FC= () => {
 
             <div className="flex flex-col flex-wrap items-center justify-center order-1 w-full p-8 lg:order-2 h-5/12 lg:h-screen lg:w-5/12">
                 <Image
-                src="./assets/Jakin.webp"
-                width={500}
-                height={500}
-                alt="jakin image"
-                bg-color="green"
+                    className="pointer-events-none"
+                    src="./assets/Jakin.webp"
+                    width={500}
+                    height={500}
+                    alt="jakin image"
+                    bg-color="green"
                 />
             </div>
         </div>

@@ -20,7 +20,7 @@ export const Interests: React.FC= () => {
                     </div>
                     <div className='col-span-2 row-span-2 overflow-hidden'>
                         <Image
-                            className="object-cover w-full h-full"
+                            className="object-cover w-full h-full pointer-events-none"
                             src="./assets/Untitled.png"
                             alt="temp"
                             width={50}
@@ -28,9 +28,9 @@ export const Interests: React.FC= () => {
                             priority
                         /> 
                     </div>
-                    <div className='col-span-1 row-span-1 overflow-hidden'>
+                    <div className='col-span-1 row-span-1 overflow-hidden '>
                         <Image
-                            className="object-cover w-full h-full"
+                            className="object-cover w-full h-full pointer-events-none"
                             src="./assets/among-us-sus.gif"
                             alt="temp"
                             width={50}
