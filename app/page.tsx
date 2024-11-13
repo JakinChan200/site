@@ -12,6 +12,9 @@ import { Interests } from "../public/pages/interests";
 import { TestPage } from "../public/pages/testPage";
 import { ThemeButton } from "@/public/components/themeButton";
 
+import { ScrollableSite } from "../public/pages/scrollableSite";
+import { NavMenu } from "@/public/components/navMenu";
+
 // import { Tag } from  '../public/components/tag';
 // import profilePicture from "/assets/Jakin.webp";
 // import linkedinLogo from "/assets/LinkedinLogo.png";
@@ -30,12 +33,14 @@ import { ThemeButton } from "@/public/components/themeButton";
 export default function Home() {
   return (
     <main className="bg-background">
-      <ThemeButton/>
+      {/* <NavMenu/> */}
+      <ScrollableSite/>
+      {/* <ThemeButton/>
       <FrontPage/>
       <Education/>
       <Experience/>
-      <Interests/>
-      {/* <TestPage/> */}
+      <Interests/> */}
+      <TestPage/>
     </main>
   );
 }
