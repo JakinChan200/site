@@ -28,58 +28,77 @@ export const ScrollableSite: React.FC= () => {
     }, []);
   
     return (
-      <div>
+      <div className="">
         <div className="fixed flex flex-col *:m-4 items-center justify-center w-1/5 h-4/5 *:cursor-pointer translate-y-10 translate-x-1/4 bg-[#121212] rounded-md backdrop-filter backdrop-blur-sm bg-opacity-80">
-            <div className="text-center self-center align-middle text-slate-600 hover:text-slate-100 text-2xl hover:scale-150">
-                <Link href="#section1" className={`${ activeSection === "section1" ? "text-blue-500" : "text-gray-700" } hover:text-blue-500`} >Section 1 </Link>            
+            <div className="text-center self-center align-middle text-2xl">
+                <Link href="#section1"
+                    className={`${
+                        activeSection === "section1" ? "text-slate-100 transform scale-125" : "text-slate-600"
+                    } hover:text-slate-100 transition-all duration-200 ease-in-out inline-block`}
+                    >
+                    Section 1
+                </Link>
             </div>
-            <div className="text-center self-center align-middle text-slate-600 hover:text-slate-100 text-2xl hover:scale-150">
-                <Link href="#section2" className={`${ activeSection === "section2" ? "text-blue-500" : "text-gray-700" } hover:text-blue-500`} >Second Section</Link>            
+            <div className="text-center self-center align-middle text-2xl">
+                <Link href="#section2"
+                    className={`${
+                        activeSection === "section2" ? "text-slate-100 transform scale-125" : "text-slate-600"
+                    } hover:text-slate-100 transition-all duration-200 ease-in-out inline-block`}
+                    >
+                    Section 2
+                </Link>            
             </div>
-            <div className="text-center self-center align-middle text-slate-600 hover:text-slate-100 text-2xl hover:scale-150">
-            Interests
+            <div className="text-center self-center align-middle text-2xl">
+                <Link href="#section3"
+                    className={`${
+                        activeSection === "section3" ? "text-slate-100 transform scale-125" : "text-slate-600"
+                    } hover:text-slate-100 transition-all duration-200 ease-in-out inline-block`}
+                    >
+                    Section 3
+                </Link> 
             </div>
-            <div className="text-center self-center align-middle text-slate-600 hover:text-slate-100 text-2xl hover:scale-150">
-            Interests
+            <div className="text-center self-center align-middle text-2xl">
+                <Link href="#section4"
+                    className={`${
+                        activeSection === "section4" ? "text-slate-100 transform scale-125" : "text-slate-600"
+                    } hover:text-slate-100 transition-all duration-200 ease-in-out inline-block`}
+                    >
+                    Section 4
+                </Link> 
             </div>
-            <div className="text-center self-center align-middle text-slate-600 hover:text-slate-100 text-2xl hover:scale-150">
-            Interests
+            <div className="text-center self-center align-middle text-2xl">
+                <Link href="#section5"
+                    className={`${
+                        activeSection === "section5" ? "text-slate-100 transform scale-125" : "text-slate-600"
+                    } hover:text-slate-100 transition-all duration-200 ease-in-out inline-block`}
+                    >
+                    Section 5
+                </Link> 
             </div>
         </div>
 
-        {/* <div className=" *:h-screen *:w-3/4 bg-background">
-            <section id="section1" className="h-screen bg-red-100">
-                <h2 className="text-4xl text-center">Section 1</h2>
-            </section>
-
-            <section id="section2" className="h-screen bg-green-100">
-                <h2 className="text-4xl text-center">Section 2</h2>
-            </section>
-
-            <section id="section3" className="h-screen bg-blue-100">
-                <h2 className="text-4xl text-center">Section 3</h2>
-            </section>
-        </div> */}
-  
-        <div className='flex flex-row items-center justify-center h-fill *:bg-black-800'>
-            <div className='flex flex-col items-center justify-center w-1/4 h-fill translate-z-1 bg-red-400'>
-                <div className='translate-z-0 -scale3d-100'>
+        <div className='flex flex-row justify-center *:bg-background'>
+            <div className='flex flex-col w-1/4 *:h-screen'>
+                <div className=''>
                     breh
                 </div>
-                <div className='self-center h-screen'>
-                     bruh
+                <div className=''>
+                    bruh
+                </div>
+                <div>
+                    bru
                 </div>
             </div>
-            <div className=" *:h-screen *:w-3/4 bg-background">
-                <section id="section1" className="h-screen bg-red-100">
+            <div className="flex flex-col *:h-screen w-3/4 bg-background">
+                <section id="section1" className="h-screen">
                     <h2 className="text-4xl text-center">Section 1</h2>
                 </section>
 
-                <section id="section2" className="h-screen bg-green-100">
+                <section id="section2" className="h-screen">
                     <h2 className="text-4xl text-center">Section 2</h2>
                 </section>
 
-                <section id="section3" className="h-screen bg-blue-100">
+                <section id="section3" className="h-screen">
                     <h2 className="text-4xl text-center">Section 3</h2>
                 </section>
             </div>
