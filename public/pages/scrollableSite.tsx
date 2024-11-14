@@ -6,12 +6,12 @@ import { useState } from 'react';
 import { useEffect } from 'react';
 
 export const ScrollableSite: React.FC= () => {
-    const [activeSection, setActiveSection] = useState("");
+    const [activeSection, setActiveSection] = useState("section1");
 
     const handleScroll = () => {
       const sections = document.querySelectorAll("section");
-      let currentSection = "";
-  
+      let currentSection = "section1";
+
       sections.forEach(section => {
         const rect = section.getBoundingClientRect();
         if (rect.top <= window.innerHeight / 2 && rect.bottom >= window.innerHeight / 2) {
@@ -80,26 +80,27 @@ export const ScrollableSite: React.FC= () => {
         <div className='flex flex-row justify-center *:bg-background'>
             <div className='flex flex-col w-1/4 *:h-screen'>
                 <div className=''>
-                    breh
-                </div>
-                <div className=''>
-                    bruh
-                </div>
-                <div>
-                    bru
                 </div>
             </div>
             <div className="flex flex-col *:h-screen w-3/4 bg-background">
-                <section id="section1" className="h-screen">
+                <section id="section1" className={`${ activeSection === "section1" ? "opacity-100" : "opacity-0" } transition-opacity ease-in duration-200`}>
                     <h2 className="text-4xl text-center">Section 1</h2>
                 </section>
 
-                <section id="section2" className="h-screen">
+                <section id="section2" className={`${ activeSection === "section2" ? "opacity-100" : "opacity-0" } transition-opacity ease-in duration-200`}>
                     <h2 className="text-4xl text-center">Section 2</h2>
                 </section>
 
-                <section id="section3" className="h-screen">
+                <section id="section3" className={`${ activeSection === "section3" ? "opacity-100" : "opacity-0" } transition-opacity ease-in duration-200`}>
                     <h2 className="text-4xl text-center">Section 3</h2>
+                </section>
+
+                <section id="section4" className={`${ activeSection === "section4" ? "opacity-100" : "opacity-0" } transition-opacity ease-in duration-200`}>
+                    <h2 className="text-4xl text-center">Section 4</h2>
+                </section>
+
+                <section id="section5" className={`${ activeSection === "section5" ? "opacity-100" : "opacity-0" } transition-opacity ease-in duration-200`}>
+                    <h2 className="text-4xl text-center">Section 5</h2>
                 </section>
             </div>
         </div>
