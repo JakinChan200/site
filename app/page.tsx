@@ -5,10 +5,10 @@
 // import Typewriter from 'typewriter-effect';
 // import Link from 'next/link';
 // import { Tag } from  "../public/components/tag";
-import { Education } from "../public/pages/education";
-import { FrontPage } from "../public/pages/frontPage";
-import { Experience } from "../public/pages/experience";
-import { Interests } from "../public/pages/interests";
+import { Education } from "../public/pages/FirstSite/education";
+import { FrontPage } from "../public/pages/FirstSite/frontPage";
+import { Experience } from "../public/pages/FirstSite/experience";
+import { Interests } from "../public/pages/FirstSite/interests";
 import { TestPage } from "../public/pages/testPage";
 import { ThemeButton } from "@/public/components/themeButton";
 
