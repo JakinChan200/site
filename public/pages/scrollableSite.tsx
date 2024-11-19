@@ -29,7 +29,7 @@ export const ScrollableSite: React.FC= () => {
     }, []);
   
     return (
-      <div className="select-none">
+      <div className="select-none text-[#f1f5f9]">
         <div className="fixed flex flex-col *:m-6 *:text-sm *:md:text-2xl items-center justify-center w-1/5 h-4/5 *:cursor-pointer translate-y-20 translate-x-1/4 bg-[#121212] rounded-lg backdrop-filter backdrop-blur-sm bg-opacity-80 border-2 border-black shadow-md">
             <div className="text-center align-middle">
                 <Link href="#Introduction"
