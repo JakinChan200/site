@@ -7,11 +7,11 @@ import { useState } from 'react';
 import { useEffect } from 'react';
 
 export const ScrollableSite: React.FC= () => {
-    const [activeSection, setActiveSection] = useState("section1");
+    const [activeSection, setActiveSection] = useState("Introduction");
 
     const handleScroll = () => {
       const sections = document.querySelectorAll("section");
-      let currentSection = "section1";
+      let currentSection = "Introduction";
 
       sections.forEach(section => {
         const rect = section.getBoundingClientRect();
@@ -29,39 +29,39 @@ export const ScrollableSite: React.FC= () => {
     }, []);
   
     return (
-      <div className="">
+      <div className="select-none">
         <div className="fixed flex flex-col *:m-6 *:text-sm *:md:text-2xl items-center justify-center w-1/5 h-4/5 *:cursor-pointer translate-y-20 translate-x-1/4 bg-[#121212] rounded-lg backdrop-filter backdrop-blur-sm bg-opacity-80 border-2 border-black shadow-md">
             <div className="text-center align-middle">
-                <Link href="#section1"
+                <Link href="#Introduction"
                     className={`${
-                        activeSection === "section1" ? "text-slate-100 transform scale-125" : "text-slate-600"
+                        activeSection === "Introduction" ? "text-slate-100 transform scale-125" : "text-slate-600"
                     } hover:text-slate-100 transition-all duration-200 ease-in-out inline-block`}
                     >
                     Introduction
                 </Link>
             </div>
             <div className="text-center align-middle">
-                <Link href="#section2"
+                <Link href="#Education"
                     className={`${
-                        activeSection === "section2" ? "text-slate-100 transform scale-125" : "text-slate-600"
+                        activeSection === "Education" ? "text-slate-100 transform scale-125" : "text-slate-600"
                     } hover:text-slate-100 transition-all duration-200 ease-in-out inline-block`}
                     >
                     Education
                 </Link>            
             </div>
             <div className="text-center align-middle">
-                <Link href="#section3"
+                <Link href="#Projects"
                     className={`${
-                        activeSection === "section3" ? "text-slate-100 transform scale-125" : "text-slate-600"
+                        activeSection === "Projects" ? "text-slate-100 transform scale-125" : "text-slate-600"
                     } hover:text-slate-100 transition-all duration-200 ease-in-out inline-block`}
                     >
                     Projects
                 </Link> 
             </div>
             <div className="text-center align-middle">
-                <Link href="#section4"
+                <Link href="#Experience"
                     className={`${
-                        activeSection === "section4" ? "text-slate-100 transform scale-125" : "text-slate-600"
+                        activeSection === "Experience" ? "text-slate-100 transform scale-125" : "text-slate-600"
                     } hover:text-slate-100 transition-all duration-200 ease-in-out inline-block`}
                     >
                     Experience
@@ -84,11 +84,11 @@ export const ScrollableSite: React.FC= () => {
                 </div>
             </div>
             <div className="flex flex-col *:h-screen w-3/4 bg-background *:transition-opacity *:ease-in *:duration-200">
-                <section id="section1" className={`${ activeSection === "section1" ? "opacity-100" : "opacity-0" } flex flex-col items-center justify-center`}>
+                <section id="Introduction" className={`${ activeSection === "Introduction" ? "opacity-100" : "opacity-0 pointer-events-none" } flex flex-col items-center justify-center`}>
                     {/* <h2 className="my-8 text-4xl text-center">Introduction</h2> */}
                     <div className="flex flex-row items-center justify-center w-3/4 h-4/5">
                         <div className="w-3/4 text-2xl tracking-wide text-left h-3/4">
-                            <div className="text-4xl text-left">
+                            <div className="text-4xl font-medium text-left">
                                 Jakin Chan
                             </div>
                             <br></br><br></br>
@@ -104,12 +104,7 @@ export const ScrollableSite: React.FC= () => {
                                     <div className="text-4xl group-hover:scale-110 group-hover:inline-block group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-blue-600 group-hover:via-amber-700 group-hover:to-indigo-40 group-hover:bg-clip-text">
                                         X
                                     </div>
-                                </div>
-                                <div className="flex items-center justify-center hover:scale-110 group">
-                                    <div className="text-4xl group-hover:scale-110 group-hover:inline-block group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-blue-600 group-hover:via-amber-700 group-hover:to-indigo-40 group-hover:bg-clip-text">
-                                        in
-                                    </div>
-                                </div> */}
+                                </div>*/}
                                 <Link className="flex items-center justify-center hover:scale-110 group" href="mailto:JakinChan200@gmail.com" target="_blank" passHref={true}>
                                     <button className="">
                                     <svg width="35" height="35" fill="none" viewBox="0 0 24 24">
@@ -137,10 +132,10 @@ export const ScrollableSite: React.FC= () => {
                     </div>
                 </section>
 
-                <section id="section2" className={`${ activeSection === "section2" ? "opacity-100" : "opacity-0" } flex flex-col items-center justify-center`}>
-                    <h2 className="my-8 text-4xl text-center">Education</h2>
-                    <div className="flex flex-row items-center justify-center w-3/4 h-4/5">
-                        <div className="w-3/4 text-2xl tracking-wide text-left h-3/4">
+                <section id="Education" className={`${ activeSection === "Education" ? "opacity-100" : "opacity-0 pointer-events-none" } flex flex-col items-center justify-center`}>
+                    <div className="flex flex-col justify-center w-full h-screen">
+                        <h2 className="my-8 text-4xl text-center">Education</h2>
+                        <div className="flex flex-row items-center justify-center w-full text-2xl tracking-wide text-center h-2/5">
                             University of California, Riverside
                             <br></br>
                             MS in Computer Science
@@ -158,34 +153,99 @@ export const ScrollableSite: React.FC= () => {
                     </div>
                 </section>
 
-                <section id="section3" className={`${ activeSection === "section3" ? "opacity-100" : "opacity-0" } `}>
-                    <h2 className="my-8 text-4xl text-center">Projects</h2>
+                <section id="Projects" className={`${ activeSection === "Projects" ? "opacity-100" : "opacity-0 pointer-events-none" } `}>
+                    <div className="flex flex-col items-center justify-center w-full h-screen">
+                        <h2 className="my-8 text-4xl text-center">Projects</h2>
+                        <div className="justify-center w-3/4 h-3/5">
+                            <div className="overflow-x-scroll w-full h-2/3 gap-4 justify-start *:w-64 *:h-full flex snap-x *:bg-[#121212] *:rounded-md *:flex-shrink-0 *:snap-start">
+                                <div className="flex flex-col items-center p-4">
+                                    <div className="flex items-center justify-center w-full text-2xl h-1/5">
+                                        2048
+                                    </div>
+                                    <div className="w-full mb-4 text-md">
+                                        In a team, built a GUI to play the hit game 2048 or have a bot play for you.
+                                    </div>
+                                    <div className="w-full text-md">
+                                        Tech Stack:
+                                        <p>-Python</p>
+                                    </div>
+                                </div>
+                                <div className="flex flex-col items-center p-4">
+                                    <div className="flex items-center justify-center w-full text-2xl h-1/5">
+                                        Summarizer
+                                    </div>
+                                    <div className="w-full mb-4 text-md">
+                                        In a team, built a Chat-GPT wrapper to summarize content given a YouTube link or text. Dark mode included.
+                                    </div>
+                                    <div className="w-full text-md">
+                                        Tech Stack:
+                                        <p>-NextJs</p>
+                                        <p>-Tailwind CSS</p>
+                                        <p>-Typescript</p>
+                                        <p>-Angular</p>
+                                    </div>
+                                </div>
+                                <div className="flex flex-col items-center p-4">
+                                    <div className="flex items-center justify-center w-full mb-4 text-2xl h-1/5">
+                                        Feature Selection
+                                    </div>
+                                    <div className="w-full mb-4 text-md">
+                                        Implemented leave-one-out feature selction to process and develop a classifier.
+                                    </div>
+                                    <div className="w-full text-md">
+                                        Tech Stack:
+                                        <p>-C++</p>
+                                    </div>
+                                </div>
+                                <div className="">
+                                    
+                                </div>
+                                <div className="">
+                                    
+                                </div>
+                            </div>
+                            <div className="flex flex-row w-full h-1/3">
+                                <div className="w-full">
+                                    <div className="flex items-center justify-center pointer-events-none h-1/2">
+                                        <a href="https://skillicons.dev">
+                                            <img src="https://skillicons.dev/icons?i=cpp,java,python,html,css,mysql,latex" />
+                                        </a>
+                                    </div>
+                                    <div className="flex items-center justify-center pointer-events-none h-1/2">
+                                        <a href="https://skillicons.dev">
+                                            <img src="https://skillicons.dev/icons?i=github,git,vscode,vim,react,nextjs,arduino" />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </section>
 
-                <section id="section4" className={`${ activeSection === "section4" ? "opacity-100" : "opacity-0" } `}>
+                <section id="Experience" className={`${ activeSection === "Experience" ? "opacity-100" : "opacity-0 pointer-events-none" } `}>
                     <h2 className="my-8 text-4xl text-center">Experience</h2>
                 </section>
 
-                <section id="section5" className={`${ activeSection === "section5" ? "opacity-100" : "opacity-0" } `}>
+                <section id="section5" className={`${ activeSection === "section5" ? "opacity-100" : "opacity-0 pointer-events-none" } `}>
                     <h2 className="my-8 text-4xl text-center">Section 5</h2>
+                    <div className="flex flex-col items-center justify-center w-full text-xl">
+                        #TODO
+                        <p>-Fill Experience</p>
+                        <p>-Resort/refactor Files</p>
+                        <p>-Add more projects</p>
+                        <p>-Adapt navbar to mobile</p>
+                        <p>-Update projects scrolling to scrollwheel and drag</p>
+                        <p>-Update UI/UX to be WCAG level AA compliant</p>
+                        <p>-Update text to be dislexia friendly</p>
+                    </div>
                 </section>
             </div>
         </div>
+        <div className="w-full h-32 bg-[#100000] flex justify-center items-center text-xl">
+            😁 Thank You! 😁
+        </div>
       </div>
     );
-//     <div className="pt-20">
-//     <section id="section1" className="h-screen bg-red-100">
-//       <h2 className="text-4xl text-center">Section 1</h2>
-//     </section>
-
-//     <section id="section2" className="h-screen bg-green-100">
-//       <h2 className="text-4xl text-center">Section 2</h2>
-//     </section>
-
-//     <section id="section3" className="h-screen bg-blue-100">
-//       <h2 className="text-4xl text-center">Section 3</h2>
-//     </section>
-//   </div>
 };
 
 // https://stackoverflow.com/questions/42821213/different-scroll-speed-for-each-element

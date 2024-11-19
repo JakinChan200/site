@@ -79,6 +79,8 @@ UI/UX
     https://www.svgrepo.com/
     https://jakearchibald.github.io/svgomg/
 
+    Icons
+    https://github.com/tandpfun/skill-icons
 
 git issues
 https://git-lfs.com/
