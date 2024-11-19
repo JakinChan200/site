@@ -22,7 +22,7 @@ const { theme } = useTheme();
                                 <div className="self-center m-2">
                                     <Image
                                     className="rounded-lg"
-                                    src="./assets/UCR.jpg"
+                                    src="./assets/FirstSite/UCR.jpg"
                                     width={250}
                                     height={250}
                                     alt="jakin image"
@@ -71,7 +71,7 @@ const { theme } = useTheme();
                                 <div className="self-center m-2">
                                     <Image
                                     className="rounded-lg"
-                                    src="./assets/UCR.jpg"
+                                    src="./assets/FirstSite/UCR.jpg"
                                     width={250}
                                     height={250}
                                     alt="jakin image"

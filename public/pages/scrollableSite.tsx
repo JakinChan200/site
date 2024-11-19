@@ -78,12 +78,12 @@ export const ScrollableSite: React.FC= () => {
             </div>
         </div>
 
-        <div className='flex flex-row justify-center *:bg-background'>
+        <div className='flex flex-row justify-center'> {/**:bg-background*/}
             <div className='flex flex-col w-1/4 *:h-screen'>
                 <div className=''>
                 </div>
             </div>
-            <div className="flex flex-col *:h-screen w-3/4 bg-background *:transition-opacity *:ease-in *:duration-200">
+            <div className="flex flex-col *:h-screen w-3/4 *:transition-opacity *:ease-in *:duration-200"> {/**:bg-background*/}
                 <section id="Introduction" className={`${ activeSection === "Introduction" ? "opacity-100" : "opacity-0 pointer-events-none" } flex flex-col items-center justify-center`}>
                     {/* <h2 className="my-8 text-4xl text-center">Introduction</h2> */}
                     <div className="flex flex-row items-center justify-center w-3/4 h-4/5">
