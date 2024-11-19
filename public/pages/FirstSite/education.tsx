@@ -3,7 +3,7 @@
 import React from "react";
 import Link from 'next/link';
 import Image from "next/image";
-import { Tag } from  "../components/tag";
+import { Tag } from  "../../components/tag";
 import { useTheme } from 'next-themes';
 
 export const Education: React.FC= () => {

@@ -5,12 +5,15 @@
 // import Typewriter from 'typewriter-effect';
 // import Link from 'next/link';
 // import { Tag } from  "../public/components/tag";
-import { Education } from "../public/pages/education";
-import { FrontPage } from "../public/pages/frontPage";
-import { Experience } from "../public/pages/experience";
-import { Interests } from "../public/pages/interests";
+import { Education } from "../public/pages/FirstSite/education";
+import { FrontPage } from "../public/pages/FirstSite/frontPage";
+import { Experience } from "../public/pages/FirstSite/experience";
+import { Interests } from "../public/pages/FirstSite/interests";
 import { TestPage } from "../public/pages/testPage";
 import { ThemeButton } from "@/public/components/themeButton";
+
+import { ScrollableSite } from "../public/pages/scrollableSite";
+import { NavMenu } from "@/public/components/navMenu";
 
 // import { Tag } from  '../public/components/tag';
 // import profilePicture from "/assets/Jakin.webp";
@@ -30,11 +33,13 @@ import { ThemeButton } from "@/public/components/themeButton";
 export default function Home() {
   return (
     <main className="bg-background">
-      <ThemeButton/>
+      {/* <NavMenu/> */}
+      <ScrollableSite/>
+      {/* <ThemeButton/>
       <FrontPage/>
       <Education/>
       <Experience/>
-      <Interests/>
+      <Interests/> */}
       {/* <TestPage/> */}
     </main>
   );

@@ -12,6 +12,7 @@ Next js
 
     Linking
     https://stackoverflow.com/questions/61059111/external-link-is-not-working-in-next-js-when-you-want-to-use-link-component
+    https://stackoverflow.com/questions/65632698/how-to-open-a-link-in-a-new-tab-in-nextjs
 
     Components
     https://stackoverflow.com/questions/65154872/better-way-to-add-types-to-props-in-a-functional-component-in-nextjs-typescript
@@ -61,10 +62,25 @@ https://tw-elements.com/learn/te-foundations/te-ui-kit/split-screen/
     Shine Effect
     https://ibelick.com/blog/create-shine-effect-on-card-with-tailwind-css
 
+    Linking pages
+    https://stackoverflow.com/questions/68589788/nextjs-link-to-scroll-to-a-section-in-same-page
+
+    Smooth Scrolling
+    https://stackoverflow.com/questions/71125642/how-to-add-tailwind-css-scroll-smooth-class-to-next-js
+
+    Appear on Scroll
+    https://medium.com/@jacobvejlinjensen/how-to-create-a-smooth-appear-on-scroll-transition-with-tailwind-css-and-react-82f2a32ab295
+
 UI/UX
     Bento box
     https://www.youtube.com/watch?v=LJuM_Rqdd8o&list=PLVC87ULGjfFPD5rQH7Hh6MUPPOnkaynXo&index=4
 
+    SVG
+    https://www.svgrepo.com/
+    https://jakearchibald.github.io/svgomg/
+
+    Icons
+    https://github.com/tandpfun/skill-icons
 
 git issues
 https://git-lfs.com/

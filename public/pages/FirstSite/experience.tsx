@@ -8,7 +8,7 @@ import { useTheme } from 'next-themes';
 
 
 import { useEffect, useState } from "react";
-import TimelineEntry from "../components/timelineEntry";
+import TimelineEntry from "../../components/timelineEntry";
 
 const tracks = ["Activities Leader", "Operations Lead", "Resident Advisor", "GWC Volunteer"];
 
