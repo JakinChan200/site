@@ -31,7 +31,7 @@ export const FrontPage: React.FC= () => {
                         <button className="transition hover:-translate-y-2">
                             <Image
                             className="mr-4 bg-transparent rounded-full shadow-lg shadow-shadow pointer-events-none"
-                            src="./assets/LinkedinLogo.png"
+                            src="./assets/FirstSite/LinkedinLogo.png"
                             alt="LinkedIn Logo"
                             width={50}
                             height={50}
@@ -44,7 +44,7 @@ export const FrontPage: React.FC= () => {
                         <button className="transition hover:-translate-y-2">
                             <Image
                             className="mr-4 bg-transparent rounded-full shadow-lg shadow-shadow pointer-events-none"
-                            src="./assets/GithubLogo.png"
+                            src="./assets/FirstSite/GithubLogo.png"
                             alt="Github Logo"
                             width={50}
                             height={50}
@@ -56,7 +56,7 @@ export const FrontPage: React.FC= () => {
                         <button className="transition hover:-translate-y-2">
                             <Image
                             className="mr-4 bg-transparent rounded-full shadow-lg shadow-shadow pointer-events-none"
-                            src="./assets/EmailLogo.png"
+                            src="./assets/FirstSite/EmailLogo.png"
                             alt="EmailLogo"
                             width={50}
                             height={50}
@@ -68,7 +68,7 @@ export const FrontPage: React.FC= () => {
                         <button className="transition hover:-translate-y-2">
                             <Image
                                 className="mr-4 bg-transparent rounded-full shadow-lg shadow-shadow pointer-events-none"
-                                src="./assets/InstagramLogo.png"
+                                src="./assets/FirstSite/InstagramLogo.png"
                                 alt="InstagramLogo"
                                 width={50}
                                 height={50}
@@ -83,7 +83,7 @@ export const FrontPage: React.FC= () => {
             <div className="flex flex-col flex-wrap items-center justify-center order-1 w-full p-8 lg:order-2 h-5/12 lg:h-screen lg:w-5/12">
                 <Image
                     className="pointer-events-none"
-                    src="./assets/Jakin.webp"
+                    src="./assets/FirstSite/Jakin.webp"
                     width={500}
                     height={500}
                     alt="jakin image"
