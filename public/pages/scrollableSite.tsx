@@ -29,7 +29,7 @@ export const ScrollableSite: React.FC= () => {
     }, []);
   
     return (
-        <div className="select-none text-[#f1f5f9]">
+        <div className="select-none text-[#f1f5f9] tracking-wide">
             <div className="fixed flex flex-col *:m-6 *:text-sm *:lg:text-2xl items-center justify-center w-1/4 lg:w-1/5 h-full lg:h-4/5 *:cursor-pointer lg:translate-y-[10%] lg:translate-x-1/4 bg-[#121212] rounded-lg backdrop-filter backdrop-blur-sm bg-opacity-80 border-2 border-black shadow-md"> {/*md:translate-y-20 md:translate-x-1/4*/}
                 <div className="text-center align-middle">
                     <Link href="#Introduction"
@@ -87,18 +87,20 @@ export const ScrollableSite: React.FC= () => {
                     <section id="Introduction" className={`${ activeSection === "Introduction" ? "opacity-100" : "opacity-0 pointer-events-none" } flex flex-col items-center justify-center`}>
                         {/* <h2 className="my-8 text-4xl text-center">Introduction</h2> */}
                         <div className="flex flex-row items-center justify-center w-3/4 h-4/5">
-                            <div className="w-3/4 text-2xl tracking-wide text-left h-3/4">
-                                <div className="text-4xl font-medium text-left">
+                            <div className="flex flex-col justify-center w-3/4 tracking-wide text-left h-3/4">
+                                <div className="text-2xl font-medium text-left lg:text-4xl">
                                     Jakin Chan
                                 </div>
-                                <br></br><br></br>
-                                    Hi, I am a recent graduate of the University of California, Riverside.
-                                <br></br><br></br>
-                                    I enjoy learning and applying what i've learned.
-                                <br></br><br></br>
-                                    Thank you.
-                                <br></br><br></br>
-                                <br></br><br></br>
+                                <div className="text-xl lg:text-2xl">
+                                    <br></br><br></br>
+                                        Hi, I am a recent graduate of the University of California, Riverside.
+                                    <br></br><br></br>
+                                        I enjoy learning and applying what i've learned.
+                                    <br></br><br></br>
+                                        Thank you.
+                                    <br></br><br></br>
+                                    <br></br><br></br>
+                                </div>
                                 <div className="flex flex-row flex-wrap *:mr-4 *:mb-4 *:size-14 *:bg-[#100000] *:rounded-2xl *:cursor-pointer">
                                     {/* <div className="flex items-center justify-center hover:scale-110 group">
                                         <div className="text-4xl group-hover:scale-110 group-hover:inline-block group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-blue-600 group-hover:via-amber-700 group-hover:to-indigo-40 group-hover:bg-clip-text">
@@ -134,8 +136,8 @@ export const ScrollableSite: React.FC= () => {
 
                     <section id="Education" className={`${ activeSection === "Education" ? "opacity-100" : "opacity-0 pointer-events-none" } flex flex-col items-center justify-center`}>
                         <div className="flex flex-col justify-center w-full h-screen">
-                            <h2 className="my-8 text-4xl text-center">Education</h2>
-                            <div className="flex flex-row items-center justify-center w-full text-2xl tracking-wide text-center h-2/5">
+                            <h2 className="my-8 text-2xl text-center lg:text-4xl">Education</h2>
+                            <div className="flex flex-row items-center justify-center w-full text-xl tracking-wide text-center lg:text-2xl h-2/5">
                                 University of California, Riverside
                                 <br></br>
                                 MS in Computer Science
@@ -155,7 +157,7 @@ export const ScrollableSite: React.FC= () => {
 
                     <section id="Projects" className={`${ activeSection === "Projects" ? "opacity-100" : "opacity-0 pointer-events-none" } `}>
                         <div className="flex flex-col items-center justify-center w-full h-screen">
-                            <h2 className="my-8 text-4xl text-center">Projects</h2>
+                            <h2 className="my-8 text-2xl text-center lg:text-4xl">Projects</h2>
                             <div className="justify-center w-3/4 h-3/5">
                                 <div className="overflow-x-scroll overflow-y-visible w-full h-3/4 gap-4 justify-start *:w-64 *:h-full flex snap-x *:bg-[#121212] *:rounded-md *:flex-shrink-0 *:snap-start">
                                     <div className="w-full h-full">
@@ -266,20 +268,54 @@ export const ScrollableSite: React.FC= () => {
                     </section>
 
                     <section id="Experience" className={`${ activeSection === "Experience" ? "opacity-100" : "opacity-0 pointer-events-none" } `}>
-                        <h2 className="my-8 text-4xl text-center">Experience</h2>
+                        <div className="flex flex-col items-center justify-center w-full h-screen">
+                            <h2 className="my-8 text-2xl text-center lg:text-4xl">Experience</h2>
+                            <div className="w-1/2 *:w-full *:mb-8">
+                                <div className="">
+                                    <h3 className="mb-1 text-xl lg:text-2xl">
+                                        Resident Advisor
+                                    </h3>
+                                    <div className="font-extralight text-md lg:text-lg">
+                                        University of California, Riverside
+                                        <br></br>
+                                        [ 2022 - 2024 ]
+                                    </div>
+                                    <div className="text-md lg:text-xl">
+                                        - Acted as a primary advisor for roughly 45 residents on available campus resources and housing needs
+                                    </div>
+                                </div>
+                                <div className="">
+                                    <h3 className="mb-1 text-xl lg:text-2xl">
+                                        Summer School Activities Leader
+                                    </h3>
+                                    <div className="font-extralight text-md lg:text-lg">
+                                        Cornerstone Academy
+                                        <br></br>
+                                        [ Summer 2018 ]
+                                    </div>
+                                    <div className="text-md lg:text-xl">
+                                        - Directed 20+ second graders through a variety of indoor and outdoor activities
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                     </section>
 
                     <section id="section5" className={`${ activeSection === "section5" ? "opacity-100" : "opacity-0 pointer-events-none" } `}>
-                        <h2 className="my-8 text-4xl text-center">Section 5</h2>
-                        <div className="flex flex-col items-center justify-center w-full text-xl">
-                            #TODO
-                            <p>-Fill Experience</p>
-                            <p>-Resort/refactor Files</p>
-                            <p>-Add more projects</p>
-                            <p>-Adapt navbar + dimensions to mobile</p>
-                            <p>-Update projects scrolling to scrollwheel and drag</p>
-                            <p>-Update UI/UX to be WCAG level AA compliant</p>
-                            <p>-Update text to be dyslexia friendly</p>
+                        <div className="flex flex-col items-center justify-center h-full">
+                            <h2 className="my-8 text-2xl text-center lg:text-4xl">Section 5</h2>
+                            <div className="flex flex-col items-start justify-center w-1/2 text-lg lg:text-xl">
+                                <div className="flex justify-center w-1/2">
+                                    #TODO
+                                </div>
+                                <p>-Re-sort/refactor files</p>
+                                <p>-Adapt navbar + dimensions to mobile</p>
+                                <p>-Update projects scrolling to scrollwheel and drag</p>
+                                <p>-Fix projects overflow</p>
+                                <p>-Update UI/UX to be WCAG level AA compliant</p>
+                                <p>-Update text to be dyslexia friendly</p>
+                            </div>
                         </div>
                     </section>
                 </div>
