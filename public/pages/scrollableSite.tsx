@@ -154,16 +154,16 @@ export const ScrollableSite: React.FC= () => {
                         <div className="flex flex-col items-center justify-center w-full h-screen">
                             <h2 className="my-8 text-2xl text-center lg:text-4xl">Projects</h2>
                             <div className="w-3/4 h-[530px]">
-                                <div className="overflow-x-scroll h-3/4 gap-4 justify-start *:w-64 *:h-full flex snap-x *:bg-[#121212] *:rounded-md *:flex-shrink-0 *:snap-start">
+                                <div className="overflow-x-scroll overflow-y-hidden h-3/4 gap-4 justify-start *:w-64 *:h-full flex snap-x *:bg-[#121212] *:rounded-md *:flex-shrink-0 *:snap-start">
                                     <div className="relative">
                                         <div className="flex flex-col items-center p-4">
-                                            <div className="text-center w-full m-2 h-12 text-2xl">
+                                            <div className="text-center w-full m-2 h-12 text-xl lg:text-2xl">
                                                 2048
                                             </div>
-                                            <div className="w-full mb-4 text-md">
+                                            <div className="w-full mb-4 text-sm lg:text-base">
                                                 In a team, built a GUI to play the hit game 2048 or have a bot play for you.
                                             </div>
-                                            <div className="w-full text-md">
+                                            <div className="w-full text-sm lg:text-base">
                                                 Tech Stack:
                                                 <p>-Python</p>
                                             </div>
@@ -176,13 +176,13 @@ export const ScrollableSite: React.FC= () => {
                                     </div>
                                     <div className="relative">
                                         <div className="flex flex-col items-center p-4">
-                                            <div className="text-center w-full m-2 h-12 text-2xl">
+                                            <div className="text-center w-full m-2 h-12 text-xl lg:text-2xl">
                                                 Summarizer
                                             </div>
-                                            <div className="w-full mb-4 text-md">
+                                            <div className="w-full mb-4 text-sm lg:text-base">
                                                 In a team, built a Chat-GPT wrapper to summarize content given a YouTube link or text. Dark mode included.
                                             </div>
-                                            <div className="w-full text-md">
+                                            <div className="w-full text-sm lg:text-base">
                                                 Tech Stack:
                                                 <p>-React</p>
                                                 <p>-Tailwind CSS</p>
@@ -200,13 +200,13 @@ export const ScrollableSite: React.FC= () => {
                                     </div>
                                     <div className="relative">
                                         <div className="flex flex-col items-center p-4">
-                                            <div className="text-center w-full m-2 h-12 text-2xl">
+                                            <div className="text-center w-full m-2 h-12 text-xl lg:text-2xl">
                                                 Fault Finding
                                             </div>
-                                            <div className="w-full mb-4 text-md">
+                                            <div className="w-full mb-4 text-sm lg:text-base">
                                                 In a team, given a piece of code, and a suite of test cases, minimize the number of test cases while maintaining full coverage.
                                             </div>
-                                            <div className="w-full text-md">
+                                            <div className="w-full text-sm lg:text-base">
                                                 Tech Stack:
                                                 <p>-C++</p>
                                                 <p>-GCOV</p>
@@ -220,13 +220,13 @@ export const ScrollableSite: React.FC= () => {
                                     </div>
                                     <div className="relative">
                                         <div className="flex flex-col items-center p-4">
-                                            <div className="text-center m-2 w-full h-12 text-2xl">
+                                            <div className="text-center m-2 w-full h-12 text-xl lg:text-2xl">
                                                 Feature Selection
                                             </div>
-                                            <div className="w-full mb-4 text-md">
+                                            <div className="w-full mb-4 text-sm lg:text-base">
                                                 Implemented leave-one-out feature selction to process and develop a classifier.
                                             </div>
-                                            <div className="w-full text-md">
+                                            <div className="w-full text-sm lg:text-base">
                                                 Tech Stack:
                                                 <p>-C++</p>
                                             </div>
