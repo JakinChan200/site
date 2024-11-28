@@ -82,6 +82,9 @@ UI/UX
     Icons
     https://github.com/tandpfun/skill-icons
 
+    Converting to .ico file
+    https://convertio.co/
+
 git issues
 https://git-lfs.com/
 https://github.com/git-lfs/git-lfs/blob/main/docs/man/git-lfs-migrate.adoc?utm_source=gitlfs_site&utm_medium=doc_man_migrate_link&utm_campaign=gitlfs
