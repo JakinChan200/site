@@ -30,7 +30,7 @@ export const ScrollableSite: React.FC= () => {
   
     return (
         <div className="select-none text-[#f1f5f9] tracking-wide">
-            <div className="fixed flex flex-col *:m-6 *:text-sm *:lg:text-2xl items-center justify-center w-1/4 lg:w-1/5 h-full lg:h-4/5 *:cursor-pointer lg:translate-y-[10%] lg:translate-x-1/4 bg-[#121212] lg:rounded-lg backdrop-filter backdrop-blur-sm bg-opacity-80 border-2 border-black shadow-md"> {/*md:translate-y-20 md:translate-x-1/4*/}
+            <div className="fixed flex flex-col *:m-6 *:text-sm *:lg:text-2xl items-center justify-center w-1/4 lg:w-1/5 h-full lg:h-4/5 *:cursor-pointer lg:translate-y-[10%] lg:translate-x-1/4 bg-[#100000] lg:rounded-lg backdrop-filter backdrop-blur-sm bg-opacity-80 border-2 border-black shadow-md"> {/*md:translate-y-20 md:translate-x-1/4*/}
                 <div className="text-center align-middle">
                     <Link href="#Introduction"
                         className={`${
@@ -124,6 +124,13 @@ export const ScrollableSite: React.FC= () => {
                                             </svg>      
                                         </button>
                                     </Link>
+                                    <Link className="flex items-center justify-center hover:scale-110 group" href="../assets/Resume-Jakin Chan.pdf" target="_blank" passHref={true}>
+                                        <button className="">
+                                            <svg className="fill-white size-6 lg:size-7" viewBox="0 0 310 310">
+                                                <path d="M72.16 99.73H9.927a5 5 0 0 0-5 5v199.928a5 5 0 0 0 5 5H72.16a5 5 0 0 0 5-5V104.73a5 5 0 0 0-5-5zM41.066.341C18.422.341 0 18.743 0 41.362 0 63.991 18.422 82.4 41.066 82.4c22.626 0 41.033-18.41 41.033-41.038C82.1 18.743 63.692.341 41.066.341zM230.454 94.761c-24.995 0-43.472 10.745-54.679 22.954V104.73a5 5 0 0 0-5-5h-59.599a5 5 0 0 0-5 5v199.928a5 5 0 0 0 5 5h62.097a5 5 0 0 0 5-5V205.74c0-33.333 9.054-46.319 32.29-46.319 25.306 0 27.317 20.818 27.317 48.034v97.204a5 5 0 0 0 5 5H305a5 5 0 0 0 5-5V194.995c0-49.565-9.451-100.234-79.546-100.234z"/>
+                                            </svg>      
+                                        </button>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
@@ -168,7 +175,7 @@ export const ScrollableSite: React.FC= () => {
                                                 <p>-Python</p>
                                             </div>
                                         </div>
-                                        <Link className="absolute bottom-0 right-0 m-4" href="https://github.com/JakinChan200/2048" target="_blank" passHref={true}>
+                                        <Link className="absolute bottom-0 right-0 m-4 hover:scale-110" href="https://github.com/JakinChan200/2048" target="_blank" passHref={true}>
                                             <button className="px-3 py-1 font-semibold bg-blue-500 rounded-lg">
                                                 &rarr;
                                             </button>
@@ -192,7 +199,7 @@ export const ScrollableSite: React.FC= () => {
                                                 <p>-Python</p>
                                             </div>
                                         </div>
-                                        <Link className="absolute bottom-0 right-0 m-4" href="https://github.com/liz-areizaga/summarizer" target="_blank" passHref={true}>
+                                        <Link className="absolute bottom-0 right-0 m-4 hover:scale-110" href="https://github.com/liz-areizaga/summarizer" target="_blank" passHref={true}>
                                             <button className="px-3 py-1 font-semibold bg-blue-500 rounded-lg">
                                                 &rarr;
                                             </button>
@@ -212,7 +219,7 @@ export const ScrollableSite: React.FC= () => {
                                                 <p>-GCOV</p>
                                             </div>
                                         </div>
-                                        <Link className="absolute bottom-0 right-0 m-4" href="https://github.com/JakinChan200/CS206" target="_blank" passHref={true}>
+                                        <Link className="absolute bottom-0 right-0 m-4 hover:scale-110" href="https://github.com/JakinChan200/CS206" target="_blank" passHref={true}>
                                             <button className="px-3 py-1 font-semibold bg-blue-500 rounded-lg">
                                                 &rarr;
                                             </button>
@@ -231,7 +238,7 @@ export const ScrollableSite: React.FC= () => {
                                                 <p>-C++</p>
                                             </div>
                                         </div>
-                                        <Link className="absolute bottom-0 right-0 m-4" href="https://github.com/JakinChan200/CS205Project2" target="_blank" passHref={true}>
+                                        <Link className="absolute bottom-0 right-0 m-4 hover:scale-110" href="https://github.com/JakinChan200/CS205Project2" target="_blank" passHref={true}>
                                             <button className="px-3 py-1 font-semibold bg-blue-500 rounded-lg">
                                                 &rarr;
                                             </button>
@@ -270,26 +277,34 @@ export const ScrollableSite: React.FC= () => {
                                     <h3 className="mb-1 text-xl lg:text-2xl">
                                         Resident Advisor
                                     </h3>
-                                    <div className="font-extralight text-md lg:text-lg">
+                                    <div className="font-extralight text-xs lg:text-lg">
                                         University of California, Riverside
                                         <br></br>
                                         [ 2022 - 2024 ]
                                     </div>
-                                    <div className="text-md lg:text-lg text-pretty">
+                                    <div className="text-sm lg:text-lg text-pretty">
                                         - Acted as a primary advisor for roughly 45 residents on available campus resources and housing needs
+                                        <br></br>
+                                        - Acted as a primary advisor for 45+ residents on available campus resources and housing needs
+                                        <br></br>
+                                        - Fostered the largest average hall GPA increase in the building of 0.17 and 0.18 two years in a row
                                     </div>
                                 </div>
                                 <div className="">
                                     <h3 className="mb-1 text-xl lg:text-2xl">
                                         Summer School Activities Leader
                                     </h3>
-                                    <div className="font-extralight text-md lg:text-lg">
+                                    <div className="font-extralight text-xs lg:text-lg">
                                         Cornerstone Academy
                                         <br></br>
                                         [ Summer 2018 ]
                                     </div>
-                                    <div className="text-md lg:text-lg text-pretty">
+                                    <div className="text-sm lg:text-lg text-pretty">
                                         - Directed 20+ second graders through a variety of indoor and outdoor activities
+                                        <br></br>
+                                        - Coordinated and led cooking activities, arts and crafts, storytime, Bible lessons, and field trips
+                                        <br></br>
+                                        - Prepared materials including posters, badges, decorations, and items necessary for the above activities
                                     </div>
                                 </div>
                             </div>
