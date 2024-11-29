@@ -101,7 +101,7 @@ export const ScrollableSite: React.FC= () => {
                                     <br></br><br></br>
                                     <br></br><br></br>
                                 </div>
-                                <div className="flex flex-row flex-wrap *:mr-4 *:mb-4 *:lg:size-14 *:size-12 *:bg-[#100000] *:rounded-2xl *:cursor-pointer">
+                                <div className="flex flex-row flex-wrap *:mr-2 *:lg:mr-4 *:mb-4 *:lg:size-14 *:size-12 *:bg-[#100000] *:rounded-2xl *:cursor-pointer">
                                     <Link className="flex items-center justify-center hover:scale-110 group" href="mailto:JakinChan200@gmail.com" target="_blank" passHref={true}>
                                         <button className="">
                                             <svg className="lg:size-8 size-7" fill="none" viewBox="0 0 24 24">
@@ -126,9 +126,9 @@ export const ScrollableSite: React.FC= () => {
                                     </Link>
                                     <Link className="flex items-center justify-center hover:scale-110 group" href="../assets/Resume-Jakin Chan.pdf" target="_blank" passHref={true}>
                                         <button className="">
-                                            <svg className="fill-white size-6 lg:size-7" viewBox="0 0 310 310">
-                                                <path d="M72.16 99.73H9.927a5 5 0 0 0-5 5v199.928a5 5 0 0 0 5 5H72.16a5 5 0 0 0 5-5V104.73a5 5 0 0 0-5-5zM41.066.341C18.422.341 0 18.743 0 41.362 0 63.991 18.422 82.4 41.066 82.4c22.626 0 41.033-18.41 41.033-41.038C82.1 18.743 63.692.341 41.066.341zM230.454 94.761c-24.995 0-43.472 10.745-54.679 22.954V104.73a5 5 0 0 0-5-5h-59.599a5 5 0 0 0-5 5v199.928a5 5 0 0 0 5 5h62.097a5 5 0 0 0 5-5V205.74c0-33.333 9.054-46.319 32.29-46.319 25.306 0 27.317 20.818 27.317 48.034v97.204a5 5 0 0 0 5 5H305a5 5 0 0 0 5-5V194.995c0-49.565-9.451-100.234-79.546-100.234z"/>
-                                            </svg>      
+                                            <svg className="fill-white size-7 lg:size-8" viewBox="0 0 24 24">
+                                                <path fill-rule="evenodd" d="M6 1a3 3 0 0 0-3 3v16a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3V8.828a3 3 0 0 0-.879-2.12l-4.828-4.83A3 3 0 0 0 13.172 1H6ZM5 4a1 1 0 0 1 1-1h6v5a2 2 0 0 0 2 2h5v10a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V4Zm13.586 4L14 3.414V8h4.586Z" clip-rule="evenodd"/>
+                                            </svg>    
                                         </button>
                                     </Link>
                                 </div>
