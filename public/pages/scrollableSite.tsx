@@ -85,7 +85,6 @@ export const ScrollableSite: React.FC= () => {
                 </div>
                 <div className="flex flex-col *:h-screen w-3/4 *:transition-opacity *:ease-in *:duration-200"> {/**:bg-background*/}
                     <section id="Introduction" className={`${ activeSection === "Introduction" ? "opacity-100" : "opacity-0 pointer-events-none" } flex flex-col items-center justify-center`}>
-                        {/* <h2 className="my-8 text-4xl text-center">Introduction</h2> */}
                         <div className="flex flex-row items-center justify-center w-3/4 h-4/5">
                             <div className="flex flex-col justify-center w-3/4 tracking-wide text-left h-3/4">
                                 <div className="text-2xl font-medium text-left lg:text-4xl">
@@ -124,7 +123,14 @@ export const ScrollableSite: React.FC= () => {
                                             </svg>      
                                         </button>
                                     </Link>
-                                    <Link className="flex items-center justify-center hover:scale-110 group" href="../assets/Resume-Jakin Chan.pdf" target="_blank" passHref={true}>
+                                    <Link className="flex items-center justify-center hover:scale-110 group" href="/assets/Resume-Jakin Chan.pdf" target="_blank" passHref={true}>
+                                        <button className="">
+                                            <svg className="fill-white size-7 lg:size-8" viewBox="0 0 24 24">
+                                                <path fill-rule="evenodd" d="M6 1a3 3 0 0 0-3 3v16a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3V8.828a3 3 0 0 0-.879-2.12l-4.828-4.83A3 3 0 0 0 13.172 1H6ZM5 4a1 1 0 0 1 1-1h6v5a2 2 0 0 0 2 2h5v10a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V4Zm13.586 4L14 3.414V8h4.586Z" clip-rule="evenodd"/>
+                                            </svg>    
+                                        </button>
+                                    </Link>
+                                    <Link className="flex items-center justify-center hover:scale-110 group" href="public/assets/Resume-Jakin Chan.pdf" target="_blank" passHref={true}>
                                         <button className="">
                                             <svg className="fill-white size-7 lg:size-8" viewBox="0 0 24 24">
                                                 <path fill-rule="evenodd" d="M6 1a3 3 0 0 0-3 3v16a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3V8.828a3 3 0 0 0-.879-2.12l-4.828-4.83A3 3 0 0 0 13.172 1H6ZM5 4a1 1 0 0 1 1-1h6v5a2 2 0 0 0 2 2h5v10a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V4Zm13.586 4L14 3.414V8h4.586Z" clip-rule="evenodd"/>
