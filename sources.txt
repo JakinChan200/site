@@ -71,6 +71,9 @@ https://tw-elements.com/learn/te-foundations/te-ui-kit/split-screen/
     Appear on Scroll
     https://medium.com/@jacobvejlinjensen/how-to-create-a-smooth-appear-on-scroll-transition-with-tailwind-css-and-react-82f2a32ab295
 
+    Neumorphism
+    https://dev.to/mbianoubradon/how-to-create-a-responsive-neumorphic-ui-using-tailwindcss-47c7
+
 UI/UX
     Bento box
     https://www.youtube.com/watch?v=LJuM_Rqdd8o&list=PLVC87ULGjfFPD5rQH7Hh6MUPPOnkaynXo&index=4
@@ -85,6 +88,14 @@ UI/UX
     Converting to .ico file
     https://convertio.co/
 
+Other
+    Linking to pdf
+    https://webapps.stackexchange.com/questions/48061/can-i-trick-github-into-displaying-the-pdf-in-the-browser-instead-of-downloading
+
 git issues
 https://git-lfs.com/
 https://github.com/git-lfs/git-lfs/blob/main/docs/man/git-lfs-migrate.adoc?utm_source=gitlfs_site&utm_medium=doc_man_migrate_link&utm_campaign=gitlfs
+
+Inspiration
+    https://camillemormal.com/about
+    https://brittanychiang.com/
