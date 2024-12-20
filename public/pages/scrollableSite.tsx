@@ -68,7 +68,7 @@ export const ScrollableSite: React.FC= () => {
                     <section id="Introduction" className={`${ activeSection === "Introduction" ? "opacity-100" : "opacity-0 pointer-events-none" } h-screen flex flex-col items-center justify-center`}>
                         <div className="flex flex-row items-center justify-center w-3/4 h-4/5">
                             <div className="flex flex-col justify-center w-3/4 tracking-wide text-left h-3/4">
-                                <div className="text-2xl font-medium text-left lg:text-4xl">
+                                <div className="text-3xl font-bold tracking-normal text-left lg:text-4xl">
                                     Jakin Chan
                                 </div>
                                 <div className="text-xl lg:text-2xl">
@@ -117,22 +117,36 @@ export const ScrollableSite: React.FC= () => {
                     </section>
 
                     <section id="Education" className={`${ activeSection === "Education" ? "opacity-100" : "opacity-0 pointer-events-none" } flex flex-col items-center justify-center`}>
-                        <div className="flex flex-col justify-center w-full h-screen">
+                        <div className="flex flex-col items-center justify-center w-full h-screen">
                             <h2 className="my-8 text-4xl text-center">Education</h2>
-                            <div className="flex flex-row items-center justify-center w-full text-lg tracking-wide text-center lg:text-xl h-2/5">
-                                University of California, Riverside
-                                <br></br>
-                                MS in Computer Science
-                                <br></br>
-                                2024
-                                <br></br>
-                                <br></br>
-                                <br></br>
-                                University of California, Riverside
-                                <br></br>
-                                BS in Computer Science
-                                <br></br>
-                                2023
+                            <div className="flex flex-wrap w-4/5 m-2 tracking-wide lg:w-2/3">
+                                <div className="flex flex-col flex-shrink-0 p-6 pl-8 text-xl text-left rounded-md">
+                                    <div className="mb-2 font-semibold">
+                                        M.S. in Computer Science
+                                    </div>
+                                    <div className="text-slate-300">
+                                        University of California, Riverside
+                                    </div>
+                                    <div className="text-slate-300">
+                                        2023-2024
+                                    </div>
+                                </div>
+                                <div className="grow">
+                                </div>
+                                <div className="flex flex-col flex-shrink-0 p-6 pl-8 text-xl text-left rounded-md">
+                                    <div className="mb-2 font-semibold">
+                                        B.S. in Computer Science,
+                                        <div className="inline ml-2 text-lg italic font-normal">
+                                            Cum Laude
+                                        </div>
+                                    </div>
+                                    <div className="text-slate-300">
+                                        University of California, Riverside
+                                    </div>
+                                    <div className="text-slate-300">
+                                        2019-2023
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </section>
