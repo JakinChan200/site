@@ -32,7 +32,7 @@ import { NavMenu } from "@/public/components/navMenu";
 
 export default function Home() {
   return (
-    <main className="bg-[#1b1c1e]">
+    <main className="bg-[#141414]">
       {/* <NavMenu/> */}
       <ScrollableSite/>
       {/* <ThemeButton/>
