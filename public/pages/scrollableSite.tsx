@@ -33,7 +33,7 @@ export const ScrollableSite: React.FC= () => {
         <div className="tracking-wide select-none text-slate-200">
             <div className='flex flex-row justify-center'> {/**:bg-background*/}
                 <div className='flex justify-end w-0 lg:w-1/4'>
-                    <div className="*:uppercase font-semibold fixed hidden flex-col *:m-8 text-xl lg:flex w-1/8 *:cursor-pointer translate-y-2/3"> {/*backdrop-filter backdrop-blur-sm bg-opacity-80*/}
+                    <div className="*:uppercase font-semibold fixed hidden flex-col *:m-8 text-xl lg:flex w-1/8 *:cursor-pointer justify-center h-screen"> {/*backdrop-filter backdrop-blur-sm bg-opacity-80*/}
                         <Link href="#Introduction"
                             className={`${
                                 activeSection === "Introduction" ? "text-slate-200 transform translate-x-7" : "text-slate-600"
@@ -64,7 +64,7 @@ export const ScrollableSite: React.FC= () => {
                         </Link> 
                     </div>
                 </div>
-                <div className="flex flex-col w-screen lg:w-3/4 *:transition-opacity *:ease-in *:duration-200"> {/**:bg-background*/}
+                <div className="flex flex-col w-screen lg:w-5/6 *:transition-opacity *:ease-in *:duration-200"> {/**:bg-background*/}
                     <section id="Introduction" className={`${ activeSection === "Introduction" ? "opacity-100" : "opacity-0 pointer-events-none" } h-screen flex flex-col items-center justify-center`}>
                         <div className="flex flex-row items-center justify-center w-3/4 h-4/5">
                             <div className="flex flex-col justify-center w-3/4 tracking-wide text-left h-3/4">
@@ -119,9 +119,9 @@ export const ScrollableSite: React.FC= () => {
                     <section id="Education" className={`${ activeSection === "Education" ? "opacity-100" : "opacity-0 pointer-events-none" } flex flex-col items-center justify-center`}>
                         <div className="flex flex-col items-center justify-center w-full h-screen">
                             <h2 className="my-8 text-4xl text-center">Education</h2>
-                            <div className="flex flex-wrap w-4/5 m-2 tracking-wide lg:w-2/3">
+                            <div className="flex flex-wrap w-4/5 mb-2 mr-2 tracking-wide lg:w-2/3">
                                 <div className="flex flex-col flex-shrink-0 p-6 pl-8 text-xl text-left rounded-md">
-                                    <div className="mb-2 font-semibold">
+                                    <div className="mb-1 font-semibold">
                                         M.S. in Computer Science
                                     </div>
                                     <div className="text-slate-300">
@@ -134,7 +134,7 @@ export const ScrollableSite: React.FC= () => {
                                 <div className="grow">
                                 </div>
                                 <div className="flex flex-col flex-shrink-0 p-6 pl-8 text-xl text-left rounded-md">
-                                    <div className="mb-2 font-semibold">
+                                    <div className="mb-1 font-semibold">
                                         B.S. in Computer Science,
                                         <div className="inline ml-2 text-lg italic font-normal">
                                             Cum Laude
@@ -161,10 +161,10 @@ export const ScrollableSite: React.FC= () => {
                                             Mar 2024 - Present
                                         </div>
                                         <div className="col-span-6 col-start-1 md:col-start-3 grid-cols-subgrid">
-                                            <div className="text-2xl">
+                                            <div className="text-2xl font-medium">
                                                 Personal Site
                                             </div>
-                                            <div className="mt-4 text-md text-slate-200">
+                                            <div className="mt-3 tracking-wider text-md text-slate-200">
                                                 A personal resume website.
                                             </div>
                                             <div className="flex flex-row flex-wrap mt-2 mb-1.5">
@@ -181,11 +181,11 @@ export const ScrollableSite: React.FC= () => {
                                             Jan 2024 - Nov 2024
                                         </div>
                                         <div className="col-span-6 col-start-3 grid-cols-subgrid">
-                                            <div className="text-2xl">
+                                            <div className="text-2xl font-medium">
                                                 2048
                                             </div>
-                                            <div className="mt-4 text-md text-slate-200">
-                                                In a team, built a GUI to play the hit game 2048 or have a bot play for you.
+                                            <div className="mt-3 tracking-wider text-md text-slate-200">
+                                                In a team, built a GUI to play the hit game 2048 or have a bot play for you. Running multi-threaded min-max algorithm, the software returns and plays the move with the highest chances of victory based on the developed heuristic.
                                             </div>
                                             <div className="flex flex-row flex-wrap mt-2 mb-1.5">
                                                 <TechStackTag text="Python"/>
@@ -199,11 +199,11 @@ export const ScrollableSite: React.FC= () => {
                                             Mar 2024
                                         </div>
                                         <div className="col-span-6 col-start-3 grid-cols-subgrid">
-                                            <div className="text-2xl">
+                                            <div className="text-2xl font-medium">
                                                 Test Suite Creation Based on Coverage Criteria
                                             </div>
-                                            <div className="mt-4 text-md text-slate-200">
-                                                In a team, given a piece of code, and a suite of test cases, minimize the number of test cases while maintaining full coverage.
+                                            <div className="mt-3 tracking-wider text-md text-slate-200">
+                                                In a team, given a piece of code, and a suite of test cases, minimize the number of test cases while maintaining full coverage. This reduces the time impact of continuous testing.
                                             </div>
                                             <div className="flex flex-row flex-wrap mt-2 mb-1.5">
                                                 <div className="inline-block px-3 py-1 mt-1.5 mr-1.5 text-sm font-medium text-red-200 bg-green-500 rounded-full">
@@ -222,10 +222,10 @@ export const ScrollableSite: React.FC= () => {
                                             Aug 2023
                                         </div>
                                         <div className="col-span-6 col-start-3 grid-cols-subgrid">
-                                            <div className="text-2xl">
+                                            <div className="text-2xl font-medium">
                                                 Summarizer
                                             </div>
-                                            <div className="mt-4 text-md text-slate-200">
+                                            <div className="mt-3 tracking-wider text-md text-slate-200">
                                                 In a team, built a Chat-GPT wrapper to summarize content given a YouTube link or text. Dark mode included.
                                             </div>
                                             <div className="flex flex-row flex-wrap mt-2 mb-1.5">
@@ -245,10 +245,10 @@ export const ScrollableSite: React.FC= () => {
                                             May 2023 - June 2023
                                         </div>
                                         <div className="col-span-6 col-start-3 grid-cols-subgrid">
-                                            <div className="text-2xl">
+                                            <div className="text-2xl font-medium">
                                                 Feature Selection
                                             </div>
-                                            <div className="mt-4 text-md text-slate-200">
+                                            <div className="mt-3 tracking-wider text-md text-slate-200">
                                                 Implemented leave-one-out feature selection to process and develop a classifier.
                                             </div>
                                             <div className="flex flex-row flex-wrap mt-2 mb-1.5">
@@ -267,39 +267,47 @@ export const ScrollableSite: React.FC= () => {
                     <section id="Experience" className={`${ activeSection === "Experience" ? "opacity-100" : "opacity-0 pointer-events-none" } `}>
                         <div className="flex flex-col items-center justify-center w-full h-screen">
                             <h2 className="my-8 text-4xl text-center">Experience</h2>
-                            <div className="w-4/5 lg:w-2/3 *:w-full *:mb-8 *:bg-[#121212] *:rounded-lg *:p-6">
-                                <div className="">
-                                    <h3 className="mb-1 text-xl lg:text-2xl">
-                                        Resident Advisor
-                                    </h3>
-                                    <div className="text-xs font-extralight lg:text-lg">
-                                        University of California, Riverside
-                                        <br></br>
-                                        [ 2022 - 2024 ]
+                            <div className="w-4/5 lg:w-3/4 group">
+                                <div className="grid p-6 pl-8 rounded-lg md:grid-cols-8">
+                                    <div className="hidden col-span-2 m-2 text-sm font-semibold uppercase md:block">
+                                        Sep 2022 - Jun 2024
                                     </div>
-                                    <div className="text-sm lg:text-lg text-pretty">
-                                        - Acted as a primary advisor for roughly 45 residents on available campus resources and housing needs
-                                        <br></br>
-                                        - Acted as a primary advisor for 45+ residents on available campus resources and housing needs
-                                        <br></br>
-                                        - Fostered the largest average hall GPA increase in the building of 0.17 and 0.18 two years in a row
+                                    <div className="col-span-6 col-start-3 grid-cols-subgrid">
+                                        <div className="text-2xl font-medium">
+                                            Resident Advisor
+                                        </div>
+                                        <div className="font-extralight lg:text-lg">
+                                            University of California, Riverside
+                                        </div>
+                                        <div className="mt-3 leading-relaxed tracking-wider text-md text-slate-200 text-pretty">
+                                            - Developed and hosted programs for an 25+ residents based on predetermined educational goals
+                                            <br></br>
+                                            - Acted as a primary advisor for 45+ residents on available campus resources and housing needs
+                                            <br></br>
+                                            - Fostered the largest average hall GPA increase in the building of 0.17 and 0.18 two years in a row
+                                        </div>
                                     </div>
                                 </div>
-                                <div className="">
-                                    <h3 className="mb-1 text-xl lg:text-2xl">
-                                        Summer School Activities Leader
-                                    </h3>
-                                    <div className="text-xs font-extralight lg:text-lg">
-                                        Cornerstone Academy
-                                        <br></br>
-                                        [ Summer 2018 ]
+                            </div>
+                            <div className="w-4/5 lg:w-3/4 group">
+                                <div className="grid p-6 pl-8 rounded-lg md:grid-cols-8">
+                                    <div className="hidden col-span-2 m-2 text-sm font-semibold uppercase md:block">
+                                        Jun 2018 - Jul 2018
                                     </div>
-                                    <div className="text-sm lg:text-lg text-pretty">
-                                        - Directed 20+ second graders through a variety of indoor and outdoor activities
-                                        <br></br>
-                                        - Coordinated and led cooking activities, arts and crafts, storytime, Bible lessons, and field trips
-                                        <br></br>
-                                        - Prepared materials including posters, badges, decorations, and items necessary for the above activities
+                                    <div className="col-span-6 col-start-3 grid-cols-subgrid">
+                                        <div className="text-2xl font-medium">
+                                            Summer School Activities Leader
+                                        </div>
+                                        <div className="font-extralight lg:text-lg">
+                                            Cornerstone Academy
+                                        </div>
+                                        <div className="mt-3 leading-relaxed tracking-wider text-md text-slate-200 text-pretty">
+                                            - Directed 20+ second graders through a variety of indoor and outdoor activities
+                                            <br></br>
+                                            - Coordinated and led cooking activities, arts and crafts, storytime, and field trips
+                                            <br></br>
+                                            - Prepared materials including posters, badges, decorations, and items necessary for the above activities
+                                        </div>
                                     </div>
                                 </div>
                             </div>
