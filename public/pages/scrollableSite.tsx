@@ -30,62 +30,42 @@ export const ScrollableSite: React.FC= () => {
     }, []);
   
     return (
-        <div className="select-none text-[#f1f5f9] tracking-wide">
-            <div className="fixed hidden flex-col *:m-6 *:text-sm *:lg:text-2xl items-center justify-center lg:flex w-1/5 h-full lg:h-4/5 *:cursor-pointer lg:translate-y-[10%] lg:translate-x-1/4  lg:rounded-lg bg-[#100000]"> {/*backdrop-filter backdrop-blur-sm bg-opacity-80*/}
-                <div className="text-center align-middle">
-                    <Link href="#Introduction"
-                        className={`${
-                            activeSection === "Introduction" ? "text-slate-100 transform scale-110" : "text-slate-600"
-                        } hover:text-slate-100 transition-all duration-200 ease-in-out inline-block`}
-                        >
-                        Introduction
-                    </Link>
-                </div>
-                <div className="text-center align-middle">
-                    <Link href="#Education"
-                        className={`${
-                            activeSection === "Education" ? "text-slate-100 transform scale-110" : "text-slate-600"
-                        } hover:text-slate-100 transition-all duration-200 ease-in-out inline-block`}
-                        >
-                        Education
-                    </Link>            
-                </div>
-                <div className="text-center align-middle">
-                    <Link href="#Projects"
-                        className={`${
-                            activeSection === "Projects" ? "text-slate-100 transform scale-110" : "text-slate-600"
-                        } hover:text-slate-100 transition-all duration-200 ease-in-out inline-block`}
-                        >
-                        Projects
-                    </Link> 
-                </div>
-                <div className="text-center align-middle">
-                    <Link href="#Experience"
-                        className={`${
-                            activeSection === "Experience" ? "text-slate-100 transform scale-110" : "text-slate-600"
-                        } hover:text-slate-100 transition-all duration-200 ease-in-out inline-block`}
-                        >
-                        Experience
-                    </Link> 
-                </div>
-                <div className="self-center text-center align-middle">
-                    <Link href="#section5"
-                        className={`${
-                            activeSection === "section5" ? "text-slate-100 transform scale-110" : "text-slate-600"
-                        } hover:text-slate-100 transition-all duration-200 ease-in-out inline-block`}
-                        >
-                        Section 5
-                    </Link> 
-                </div>
-            </div>
-
+        <div className="tracking-wide select-none text-slate-200">
             <div className='flex flex-row justify-center'> {/**:bg-background*/}
-                <div className='flex flex-col w-0 lg:w-1/4 *:h-screen'>
-                    <div className=''>
+                <div className='flex justify-end w-0 lg:w-1/4'>
+                    <div className="*:uppercase font-semibold fixed hidden flex-col *:m-8 text-xl lg:flex w-1/8 *:cursor-pointer translate-y-2/3"> {/*backdrop-filter backdrop-blur-sm bg-opacity-80*/}
+                        <Link href="#Introduction"
+                            className={`${
+                                activeSection === "Introduction" ? "text-slate-200 transform translate-x-7" : "text-slate-600"
+                            } hover:text-slate-200 transition-all duration-200 ease-in-out inline-block`}
+                            >
+                            Introduction
+                        </Link>
+                        <Link href="#Education"
+                            className={`${
+                                activeSection === "Education" ? "text-slate-200 transform translate-x-7" : "text-slate-600"
+                            } hover:text-slate-200 transition-all duration-200 ease-in-out inline-block`}
+                            >
+                            Education
+                        </Link>            
+                        <Link href="#Projects"
+                            className={`${
+                                activeSection === "Projects" ? "text-slate-200 transform translate-x-7" : "text-slate-600"
+                            } hover:text-slate-200 transition-all duration-200 ease-in-out inline-block`}
+                            >
+                            Projects
+                        </Link> 
+                        <Link href="#Experience"
+                            className={`${
+                                activeSection === "Experience" ? "text-slate-200 transform translate-x-7" : "text-slate-600"
+                            } hover:text-slate-200 transition-all duration-200 ease-in-out inline-block`}
+                            >
+                            Experience
+                        </Link> 
                     </div>
                 </div>
-                <div className="flex flex-col *:h-screen w-screen lg:w-3/4 *:transition-opacity *:ease-in *:duration-200"> {/**:bg-background*/}
-                    <section id="Introduction" className={`${ activeSection === "Introduction" ? "opacity-100" : "opacity-0 pointer-events-none" } flex flex-col items-center justify-center`}>
+                <div className="flex flex-col w-screen lg:w-3/4 *:transition-opacity *:ease-in *:duration-200"> {/**:bg-background*/}
+                    <section id="Introduction" className={`${ activeSection === "Introduction" ? "opacity-100" : "opacity-0 pointer-events-none" } h-screen flex flex-col items-center justify-center`}>
                         <div className="flex flex-row items-center justify-center w-3/4 h-4/5">
                             <div className="flex flex-col justify-center w-3/4 tracking-wide text-left h-3/4">
                                 <div className="text-2xl font-medium text-left lg:text-4xl">
@@ -113,7 +93,7 @@ export const ScrollableSite: React.FC= () => {
                                     <Link className="flex items-center justify-center border-2 border-transparent hover:scale-110 hover:border-gray-500 group" href="https://github.com/JakinChan200" target="_blank" passHref={true}>
                                         <button className="">
                                             <svg className="fill-white size-7 lg:size-8" viewBox="0 0 98 96">
-                                                <path fill="#fff" fill-rule="evenodd" d="M48.854 0C21.839 0 0 22 0 49.217c0 21.756 13.993 40.172 33.405 46.69 2.427.49 3.316-1.059 3.316-2.362 0-1.141-.08-5.052-.08-9.127-13.59 2.934-16.42-5.867-16.42-5.867-2.184-5.704-5.42-7.17-5.42-7.17-4.448-3.015.324-3.015.324-3.015 4.934.326 7.523 5.052 7.523 5.052 4.367 7.496 11.404 5.378 14.235 4.074.404-3.178 1.699-5.378 3.074-6.6-10.839-1.141-22.243-5.378-22.243-24.283 0-5.378 1.94-9.778 5.014-13.2-.485-1.222-2.184-6.275.486-13.038 0 0 4.125-1.304 13.426 5.052a46.97 46.97 0 0 1 12.214-1.63c4.125 0 8.33.571 12.213 1.63 9.302-6.356 13.427-5.052 13.427-5.052 2.67 6.763.97 11.816.485 13.038 3.155 3.422 5.015 7.822 5.015 13.2 0 18.905-11.404 23.06-22.324 24.283 1.78 1.548 3.316 4.481 3.316 9.126 0 6.6-.08 11.897-.08 13.526 0 1.304.89 2.853 3.316 2.364 19.412-6.52 33.405-24.935 33.405-46.691C97.707 22 75.788 0 48.854 0z" clip-rule="evenodd"/>
+                                                <path fill="#fff" d="M48.854 0C21.839 0 0 22 0 49.217c0 21.756 13.993 40.172 33.405 46.69 2.427.49 3.316-1.059 3.316-2.362 0-1.141-.08-5.052-.08-9.127-13.59 2.934-16.42-5.867-16.42-5.867-2.184-5.704-5.42-7.17-5.42-7.17-4.448-3.015.324-3.015.324-3.015 4.934.326 7.523 5.052 7.523 5.052 4.367 7.496 11.404 5.378 14.235 4.074.404-3.178 1.699-5.378 3.074-6.6-10.839-1.141-22.243-5.378-22.243-24.283 0-5.378 1.94-9.778 5.014-13.2-.485-1.222-2.184-6.275.486-13.038 0 0 4.125-1.304 13.426 5.052a46.97 46.97 0 0 1 12.214-1.63c4.125 0 8.33.571 12.213 1.63 9.302-6.356 13.427-5.052 13.427-5.052 2.67 6.763.97 11.816.485 13.038 3.155 3.422 5.015 7.822 5.015 13.2 0 18.905-11.404 23.06-22.324 24.283 1.78 1.548 3.316 4.481 3.316 9.126 0 6.6-.08 11.897-.08 13.526 0 1.304.89 2.853 3.316 2.364 19.412-6.52 33.405-24.935 33.405-46.691C97.707 22 75.788 0 48.854 0z"/>
                                             </svg>
                                         </button>
                                     </Link>
@@ -127,7 +107,7 @@ export const ScrollableSite: React.FC= () => {
                                     <Link className="flex items-center justify-center border-2 border-transparent hover:scale-110 hover:border-gray-500 group" href="/assets/Resume-Jakin Chan.pdf" target="_blank" passHref={true}>
                                         <button className="">
                                             <svg className="fill-white size-7 lg:size-8" viewBox="0 0 24 24">
-                                                <path fill-rule="evenodd" d="M6 1a3 3 0 0 0-3 3v16a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3V8.828a3 3 0 0 0-.879-2.12l-4.828-4.83A3 3 0 0 0 13.172 1H6ZM5 4a1 1 0 0 1 1-1h6v5a2 2 0 0 0 2 2h5v10a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V4Zm13.586 4L14 3.414V8h4.586Z" clip-rule="evenodd"/>
+                                                <path d="M6 1a3 3 0 0 0-3 3v16a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3V8.828a3 3 0 0 0-.879-2.12l-4.828-4.83A3 3 0 0 0 13.172 1H6ZM5 4a1 1 0 0 1 1-1h6v5a2 2 0 0 0 2 2h5v10a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V4Zm13.586 4L14 3.414V8h4.586Z" clip-rule="evenodd"/>
                                             </svg>    
                                         </button>
                                     </Link>
@@ -138,7 +118,7 @@ export const ScrollableSite: React.FC= () => {
 
                     <section id="Education" className={`${ activeSection === "Education" ? "opacity-100" : "opacity-0 pointer-events-none" } flex flex-col items-center justify-center`}>
                         <div className="flex flex-col justify-center w-full h-screen">
-                            <h2 className="my-8 text-2xl text-center lg:text-4xl">Education</h2>
+                            <h2 className="my-8 text-4xl text-center">Education</h2>
                             <div className="flex flex-row items-center justify-center w-full text-lg tracking-wide text-center lg:text-xl h-2/5">
                                 University of California, Riverside
                                 <br></br>
@@ -157,16 +137,16 @@ export const ScrollableSite: React.FC= () => {
                         </div>
                     </section>
 
-                    <section id="Projects" className={`${ activeSection === "Projects" ? "opacity-100" : "opacity-0 pointer-events-none" } block`}>
-                        <div className="flex flex-col items-center justify-center w-full h-screen">
-                            <h2 className="my-8 text-2xl text-center lg:text-4xl">Projects</h2>
+                    <section id="Projects" className={`${ activeSection === "Projects" ? "opacity-100" : "opacity-0 pointer-events-none" } `}>
+                        <div className="flex flex-col items-center justify-center w-full">
+                            <h2 className="my-8 text-4xl text-center">Projects</h2>
                             <div className="w-4/5 lg:w-3/4 group">
                                 <Link href="https://github.com/JakinChan200/site" target="_blank" passHref={true}>
                                     <div className="p-6 pl-8 rounded-lg hover:!opacity-100 group-hover:opacity-50 group transition-all hover:border-gray-500 border-2 border-transparent grid md:grid-cols-8">
                                         <div className="hidden col-span-2 m-2 text-sm font-semibold uppercase md:block">
                                             Mar 2024 - Present
                                         </div>
-                                        <div className="col-span-6 col-start-3 grid-cols-subgrid">
+                                        <div className="col-span-6 col-start-1 md:col-start-3 grid-cols-subgrid">
                                             <div className="text-2xl">
                                                 Personal Site
                                             </div>
@@ -175,7 +155,7 @@ export const ScrollableSite: React.FC= () => {
                                             </div>
                                             <div className="flex flex-row flex-wrap mt-2 mb-1.5">
                                                 <TechStackTag text="Next.js"/>
-                                                <TechStackTag text="TailWind CSS"/>
+                                                <TechStackTag text="Tailwind CSS"/>
                                                 <TechStackTag text="TypeScript"/>
                                             </div>
                                         </div>
@@ -206,13 +186,13 @@ export const ScrollableSite: React.FC= () => {
                                         </div>
                                         <div className="col-span-6 col-start-3 grid-cols-subgrid">
                                             <div className="text-2xl">
-                                                Test Suite Condenser
+                                                Test Suite Creation Based on Coverage Criteria
                                             </div>
                                             <div className="mt-4 text-md text-slate-200">
                                                 In a team, given a piece of code, and a suite of test cases, minimize the number of test cases while maintaining full coverage.
                                             </div>
                                             <div className="flex flex-row flex-wrap mt-2 mb-1.5">
-                                                <div className="inline-block px-3 py-1 mt-1.5 mr-1.5 text-sm font-medium text-red-200 bg-red-500 rounded-full">
+                                                <div className="inline-block px-3 py-1 mt-1.5 mr-1.5 text-sm font-medium text-red-200 bg-green-500 rounded-full">
                                                     Class Project
                                                 </div>
                                                 <TechStackTag text="C++"/>
@@ -236,7 +216,7 @@ export const ScrollableSite: React.FC= () => {
                                             </div>
                                             <div className="flex flex-row flex-wrap mt-2 mb-1.5">
                                                 <TechStackTag text="React"/>
-                                                <TechStackTag text="Tailwind"/>
+                                                <TechStackTag text="Tailwind CSS"/>
                                                 <TechStackTag text="TypeScript"/>
                                                 <TechStackTag text="Axios"/>
                                                 <TechStackTag text="Flask"/>
@@ -258,7 +238,7 @@ export const ScrollableSite: React.FC= () => {
                                                 Implemented leave-one-out feature selection to process and develop a classifier.
                                             </div>
                                             <div className="flex flex-row flex-wrap mt-2 mb-1.5">
-                                                <div className="inline-block px-3 py-1 mt-1.5 mr-1.5 text-sm font-medium text-red-200 bg-red-500 rounded-full">
+                                                <div className="inline-block px-3 py-1 mt-1.5 mr-1.5 text-sm font-medium text-red-200 bg-green-500 rounded-full">
                                                     Class Project
                                                 </div>
                                                 <TechStackTag text="C++"/>
@@ -272,8 +252,8 @@ export const ScrollableSite: React.FC= () => {
 
                     <section id="Experience" className={`${ activeSection === "Experience" ? "opacity-100" : "opacity-0 pointer-events-none" } `}>
                         <div className="flex flex-col items-center justify-center w-full h-screen">
-                            <h2 className="my-8 text-2xl text-center lg:text-4xl">Experience</h2>
-                            <div className="w-2/3 *:w-full *:mb-8 *:bg-[#121212] *:rounded-lg *:p-6">
+                            <h2 className="my-8 text-4xl text-center">Experience</h2>
+                            <div className="w-4/5 lg:w-2/3 *:w-full *:mb-8 *:bg-[#121212] *:rounded-lg *:p-6">
                                 <div className="">
                                     <h3 className="mb-1 text-xl lg:text-2xl">
                                         Resident Advisor
@@ -313,9 +293,9 @@ export const ScrollableSite: React.FC= () => {
 
                     </section>
 
-                    <section id="section5" className={`${ activeSection === "section5" ? "opacity-100" : "opacity-0 pointer-events-none" } `}>
-                        <div className="flex flex-col items-center justify-center h-full">
-                            <h2 className="my-8 text-2xl text-center lg:text-4xl">Section 5</h2>
+                    {/* <section id="section5" className={`${ activeSection === "section5" ? "opacity-100" : "opacity-0 pointer-events-none" } `}>
+                        <div className="flex flex-col items-center justify-center">
+                            <h2 className="my-8 text-4xl text-center">Section 5</h2>
                             <div className="flex flex-col items-start justify-center w-1/2 text-lg lg:text-xl">
                                 <div className="flex justify-center w-1/2">
                                     #TODO
@@ -328,7 +308,7 @@ export const ScrollableSite: React.FC= () => {
                                 <p>-Update text to be dyslexia friendly</p>
                             </div>
                         </div>
-                    </section>
+                    </section> */}
                 </div>
             </div>
             <div className="w-full h-32 bg-[#100000] flex justify-center items-center text-xl">
