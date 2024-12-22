@@ -61,7 +61,14 @@ export const ScrollableSite: React.FC= () => {
                             } hover:text-slate-200 transition-all duration-200 ease-in-out inline-block`}
                             >
                             Experience
-                        </Link> 
+                        </Link>
+                        <Link href="#Extracurriculars"
+                            className={`${
+                                activeSection === "Extracurriculars" ? "text-slate-200 transform translate-x-7" : "text-slate-600"
+                            } hover:text-slate-200 transition-all duration-200 ease-in-out inline-block`}
+                            >
+                            Extracurriculars
+                        </Link>  
                     </div>
                 </div>
                 <div className="flex flex-col w-screen lg:w-5/6 *:transition-opacity *:ease-in *:duration-200"> {/**:bg-background*/}
@@ -155,7 +162,7 @@ export const ScrollableSite: React.FC= () => {
                                 <Link href="https://github.com/JakinChan200/site" target="_blank" passHref={true}>
                                     <div className="p-6 pl-8 rounded-lg hover:!opacity-100 group-hover:opacity-50 group transition-all hover:border-gray-500 border-2 border-transparent grid md:grid-cols-8">
                                         <div className="hidden col-span-2 m-2 text-sm font-semibold uppercase md:block">
-                                            Mar 2024 - Present
+                                            Nov 2024 - Present
                                         </div>
                                         <div className="col-span-6 col-start-1 md:col-start-3 grid-cols-subgrid">
                                             <div className="text-2xl font-medium">
@@ -262,7 +269,7 @@ export const ScrollableSite: React.FC= () => {
                     </section>
 
                     <section id="Experience" className={`${ activeSection === "Experience" ? "opacity-100" : "opacity-0 pointer-events-none" } `}>
-                        <div className="flex flex-col items-center justify-center w-full mb-8">
+                        <div className="flex flex-col items-center justify-center w-full mb-2 min-h-screen">
                             <h2 className="my-8 text-4xl text-center">Experience</h2>
                             <div className="w-4/5 lg:w-3/4 group">
                                 <div className="grid p-6 pl-8 rounded-lg md:grid-cols-8">
@@ -309,7 +316,7 @@ export const ScrollableSite: React.FC= () => {
                         </div>
                     </section>
 
-                    <section id="section5" className={`${ activeSection === "section5" ? "opacity-100" : "opacity-0 pointer-events-none" }`}>
+                    <section id="Extracurriculars" className={`${ activeSection === "Extracurriculars" ? "opacity-100" : "opacity-0 pointer-events-none" }`}>
                         <div className="flex flex-col items-center justify-center mb-8 min-h-screen">
                             <h2 className="my-8 text-4xl text-center">Extracurriculars</h2>
                             <div className="w-4/5 lg:w-3/4 group">
