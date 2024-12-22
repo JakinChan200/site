@@ -65,28 +65,23 @@ export const ScrollableSite: React.FC= () => {
                     </div>
                 </div>
                 <div className="flex flex-col w-screen lg:w-5/6 *:transition-opacity *:ease-in *:duration-200"> {/**:bg-background*/}
-                    <section id="Introduction" className={`${ activeSection === "Introduction" ? "opacity-100" : "opacity-0 pointer-events-none" } h-screen flex flex-col items-center justify-center`}>
+                    <section id="Introduction" className={`${ activeSection === "Introduction" ? "opacity-100" : "opacity-0 pointer-events-none" } min-h-screen flex flex-col items-center justify-center`}>
                         <div className="flex flex-row items-center justify-center w-3/4 h-4/5">
-                            <div className="flex flex-col justify-center w-3/4 tracking-wide text-left h-3/4">
-                                <div className="text-3xl font-bold tracking-normal text-left lg:text-4xl">
+                            <div className="flex flex-col justify-center w-3/4 tracking-wide text-left h-3/4 m-8">
+                                <div className="text-3xl font-bold tracking-normal text-left lg:text-4xl mb-14">
                                     Jakin Chan
                                 </div>
-                                <div className="text-xl lg:text-2xl">
-                                    <br></br><br></br>
-                                        Hi, I am a recent graduate of the University of California, Riverside.
-                                    <br></br><br></br>
-                                        I enjoy learning and building things.
-                                    <br></br><br></br>
-                                        Thank you.
-                                    <br></br><br></br>
-                                    <br></br><br></br>
+                                <div className="text-xl lg:text-2xl *:mb-8 mb-10">
+                                    <p>Hi, I am a recent graduate of the University of California, Riverside.</p>
+                                    <p>I enjoy learning and building things.</p>
+                                    <p>Thank you.</p>
                                 </div>
-                                <div className="flex flex-row flex-wrap *:mr-2 *:lg:mr-4 *:mb-4 *:lg:size-14 *:size-12 *:bg-transparent *:rounded-2xl *:cursor-pointer">
+                                <div className="flex flex-row flex-wrap *:mr-2 *:lg:mr-4 *:mb-4 *:lg:size-14 *:size-12 *:bg-transparent *:rounded-2xl *:cursor-pointer -ml-3">
                                     <Link className="flex items-center justify-center border-2 border-transparent hover:scale-110 hover:border-gray-500 group" href="mailto:JakinChan200@gmail.com" target="_blank" passHref={true}>
                                         <button className="">
                                             <svg className="lg:size-8 size-7" fill="none" viewBox="0 0 24 24">
-                                                <path stroke="#FFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m4 7 6.2 4.65a3 3 0 0 0 3.6 0L20 7"/>
-                                                <rect width="18" height="14" x="3" y="5" stroke="#FFF" stroke-linecap="round" stroke-width="2" rx="2"/>
+                                                <path stroke="#FFF" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m4 7 6.2 4.65a3 3 0 0 0 3.6 0L20 7"/>
+                                                <rect width="18" height="14" x="3" y="5" stroke="#FFF" strokeLinecap="round" strokeWidth="2" rx="2"/>
                                             </svg>   
                                         </button>
                                     </Link>
@@ -107,7 +102,7 @@ export const ScrollableSite: React.FC= () => {
                                     <Link className="flex items-center justify-center border-2 border-transparent hover:scale-110 hover:border-gray-500 group" href="/assets/Resume-Jakin Chan.pdf" target="_blank" passHref={true}>
                                         <button className="">
                                             <svg className="fill-white size-7 lg:size-8" viewBox="0 0 24 24">
-                                                <path d="M6 1a3 3 0 0 0-3 3v16a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3V8.828a3 3 0 0 0-.879-2.12l-4.828-4.83A3 3 0 0 0 13.172 1H6ZM5 4a1 1 0 0 1 1-1h6v5a2 2 0 0 0 2 2h5v10a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V4Zm13.586 4L14 3.414V8h4.586Z" clip-rule="evenodd"/>
+                                                <path d="M6 1a3 3 0 0 0-3 3v16a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3V8.828a3 3 0 0 0-.879-2.12l-4.828-4.83A3 3 0 0 0 13.172 1H6ZM5 4a1 1 0 0 1 1-1h6v5a2 2 0 0 0 2 2h5v10a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V4Zm13.586 4L14 3.414V8h4.586Z"/>
                                             </svg>    
                                         </button>
                                     </Link>
@@ -119,32 +114,34 @@ export const ScrollableSite: React.FC= () => {
                     <section id="Education" className={`${ activeSection === "Education" ? "opacity-100" : "opacity-0 pointer-events-none" } flex flex-col items-center justify-center`}>
                         <div className="flex flex-col items-center justify-center w-full h-screen">
                             <h2 className="my-8 text-4xl text-center">Education</h2>
-                            <div className="flex flex-wrap w-4/5 mb-2 mr-2 tracking-wide lg:w-2/3">
-                                <div className="flex flex-col flex-shrink-0 p-6 pl-8 text-xl text-left rounded-md">
-                                    <div className="mb-1 font-semibold">
-                                        M.S. in Computer Science
-                                    </div>
-                                    <div className="text-slate-300">
-                                        University of California, Riverside
-                                    </div>
-                                    <div className="text-slate-300">
-                                        2023-2024
-                                    </div>
-                                </div>
-                                <div className="grow">
-                                </div>
-                                <div className="flex flex-col flex-shrink-0 p-6 pl-8 text-xl text-left rounded-md">
-                                    <div className="mb-1 font-semibold">
-                                        B.S. in Computer Science,
-                                        <div className="inline ml-2 text-lg italic font-normal">
-                                            Cum Laude
+                            <div className="flex items-center justify-center">
+                                <div className="flex flex-col flex-wrap mb-2 mr-2 tracking-wide lg:flex-row">
+                                    <div className="flex flex-col flex-shrink-0 p-4 pl-6 pr-10 text-lg text-left rounded-md lg:text-xl">
+                                        <div className="mb-1 font-semibold">
+                                            M.S. in Computer Science
+                                        </div>
+                                        <div className="text-slate-300">
+                                            University of California, Riverside
+                                        </div>
+                                        <div className="text-slate-300">
+                                            2023-2024
                                         </div>
                                     </div>
-                                    <div className="text-slate-300">
-                                        University of California, Riverside
-                                    </div>
-                                    <div className="text-slate-300">
-                                        2019-2023
+                                    {/* <div className="hidden bg-red-200 2xl:block grow">
+                                    </div> */}
+                                    <div className="flex flex-col flex-shrink-0 p-4 pl-6 pr-6 text-lg text-left rounded-md lg:text-xl">
+                                        <div className="mb-1 font-semibold">
+                                            B.S. in Computer Science,
+                                            <div className="inline ml-2 text-lg italic font-normal lg:text-lg">
+                                                Cum Laude
+                                            </div>
+                                        </div>
+                                        <div className="text-slate-300">
+                                            University of California, Riverside
+                                        </div>
+                                        <div className="text-slate-300">
+                                            2019-2023
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -152,7 +149,7 @@ export const ScrollableSite: React.FC= () => {
                     </section>
 
                     <section id="Projects" className={`${ activeSection === "Projects" ? "opacity-100" : "opacity-0 pointer-events-none" } `}>
-                        <div className="flex flex-col items-center justify-center w-full">
+                        <div className="flex flex-col items-center justify-center w-full mb-8">
                             <h2 className="my-8 text-4xl text-center">Projects</h2>
                             <div className="w-4/5 lg:w-3/4 group">
                                 <Link href="https://github.com/JakinChan200/site" target="_blank" passHref={true}>
@@ -265,7 +262,7 @@ export const ScrollableSite: React.FC= () => {
                     </section>
 
                     <section id="Experience" className={`${ activeSection === "Experience" ? "opacity-100" : "opacity-0 pointer-events-none" } `}>
-                        <div className="flex flex-col items-center justify-center w-full h-screen">
+                        <div className="flex flex-col items-center justify-center w-full mb-8">
                             <h2 className="my-8 text-4xl text-center">Experience</h2>
                             <div className="w-4/5 lg:w-3/4 group">
                                 <div className="grid p-6 pl-8 rounded-lg md:grid-cols-8">
@@ -288,8 +285,6 @@ export const ScrollableSite: React.FC= () => {
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div className="w-4/5 lg:w-3/4 group">
                                 <div className="grid p-6 pl-8 rounded-lg md:grid-cols-8">
                                     <div className="hidden col-span-2 m-2 text-sm font-semibold uppercase md:block">
                                         Jun 2018 - Jul 2018
@@ -312,25 +307,63 @@ export const ScrollableSite: React.FC= () => {
                                 </div>
                             </div>
                         </div>
-
                     </section>
 
-                    {/* <section id="section5" className={`${ activeSection === "section5" ? "opacity-100" : "opacity-0 pointer-events-none" } `}>
-                        <div className="flex flex-col items-center justify-center">
-                            <h2 className="my-8 text-4xl text-center">Section 5</h2>
-                            <div className="flex flex-col items-start justify-center w-1/2 text-lg lg:text-xl">
+                    <section id="section5" className={`${ activeSection === "section5" ? "opacity-100" : "opacity-0 pointer-events-none" }`}>
+                        <div className="flex flex-col items-center justify-center mb-8 min-h-screen">
+                            <h2 className="my-8 text-4xl text-center">Extracurriculars</h2>
+                            <div className="w-4/5 lg:w-3/4 group">
+                                <div className="grid p-6 pl-8 rounded-lg md:grid-cols-8">
+                                    <div className="hidden col-span-2 m-2 text-sm font-semibold uppercase md:block">
+                                        Nov 2021 - May 2023
+                                    </div>
+                                    <div className="col-span-6 col-start-3 grid-cols-subgrid">
+                                        <div className="text-2xl font-medium">
+                                            Operations Lead
+                                        </div>
+                                        <div className="font-extralight lg:text-lg">
+                                            Cutie Hack / Citrus Hack
+                                        </div>
+                                        <div className="mt-3 leading-relaxed tracking-wider text-md text-slate-200 text-pretty">
+                                            - Planned and organized technical workshops and activities to serve the 700+ participants
+                                            <br></br>
+                                            - Influenced prize and food selection, parking and room reservations, and security and faculty issues
+                                            <br></br>
+                                            - Secured 80+ judges, mentors, chaperones, workshop instructors, and volunteers to aid in the event
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="grid p-6 pl-8 rounded-lg md:grid-cols-8">
+                                    <div className="hidden col-span-2 m-2 text-sm font-semibold uppercase md:block">
+                                        Oct 2017 - Jun 2019
+                                    </div>
+                                    <div className="col-span-6 col-start-3 grid-cols-subgrid">
+                                        <div className="text-2xl font-medium">
+                                            Program Lead Facilitator
+                                        </div>
+                                        <div className="font-extralight lg:text-lg">
+                                            Girls Who Code
+                                        </div>
+                                        <div className="mt-3 leading-relaxed tracking-wider text-md text-slate-200 text-pretty">
+                                            - Oversaw a program dedicated to teaching 20 middle school girls how to code
+                                            <br></br>
+                                            - Mentored in JavaScript, HTML, CSS, and GitHub to deploy websites as a final project
+                                            <br></br>
+                                            - Established instruction goals, developed curriculum, and collaborated with industry software engineers to deliver unique lessons covering a variety of topics
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            {/* <div className="flex flex-col items-start justify-center w-1/2 text-lg lg:text-xl">
                                 <div className="flex justify-center w-1/2">
                                     #TODO
                                 </div>
                                 <p>-Re-sort/refactor files</p>
-                                <p>-Adapt navbar + dimensions to mobile</p>
-                                <p>-Update projects scrolling to scrollwheel and drag</p>
-                                <p>-Fix projects overflow</p>
                                 <p>-Update UI/UX to be WCAG level AA compliant</p>
                                 <p>-Update text to be dyslexia friendly</p>
-                            </div>
+                            </div> */}
                         </div>
-                    </section> */}
+                    </section>
                 </div>
             </div>
             <div className="w-full h-32 bg-[#100000] flex justify-center items-center text-xl">
