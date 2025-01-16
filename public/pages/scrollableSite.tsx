@@ -120,7 +120,7 @@ export const ScrollableSite: React.FC= () => {
 
                     <section id="Education" className={`${ activeSection === "Education" ? "opacity-100" : "opacity-0 pointer-events-none" } flex flex-col items-center justify-center`}>
                         <div className="flex flex-col items-center justify-center w-full h-screen">
-                            <h2 className="my-8 text-4xl text-center">Education</h2>
+                            <h2 className="my-8 text-4xl text-center sticky top-0 bg-gradient-to-b from-[#141414] w-full lg:relative">Education</h2>
                             <div className="flex items-center justify-center">
                                 <div className="flex flex-col flex-wrap mb-2 mr-2 tracking-wide lg:flex-row">
                                     <div className="flex flex-col flex-shrink-0 p-4 pl-6 pr-10 text-lg text-left rounded-md lg:text-xl">
@@ -157,7 +157,7 @@ export const ScrollableSite: React.FC= () => {
 
                     <section id="Projects" className={`${ activeSection === "Projects" ? "opacity-100" : "opacity-0 pointer-events-none" } `}>
                         <div className="flex flex-col items-center justify-center w-full mb-8">
-                            <h2 className="my-8 text-4xl text-center">Projects</h2>
+                            <h2 className="my-8 text-4xl text-center sticky top-0 bg-gradient-to-b from-[#141414] w-full lg:relative">Projects</h2>
                             <div className="w-4/5 lg:w-3/4 group">
                                 <Link href="https://github.com/JakinChan200/site" target="_blank" passHref={true}>
                                     <div className="p-6 pl-8 rounded-lg hover:!opacity-100 group-hover:opacity-50 group transition-all hover:border-gray-500 border-2 border-transparent grid md:grid-cols-8">
@@ -193,6 +193,8 @@ export const ScrollableSite: React.FC= () => {
                                             </div>
                                             <div className="flex flex-row flex-wrap mt-2 mb-1.5">
                                                 <TechStackTag text="Python"/>
+                                                <TechStackTag text="C++"/>
+                                                <TechStackTag text="ctypes"/>
                                             </div>
                                         </div>
                                     </div>
@@ -270,7 +272,7 @@ export const ScrollableSite: React.FC= () => {
 
                     <section id="Experience" className={`${ activeSection === "Experience" ? "opacity-100" : "opacity-0 pointer-events-none" } `}>
                         <div className="flex flex-col items-center justify-center w-full mb-2 min-h-screen">
-                            <h2 className="my-8 text-4xl text-center">Experience</h2>
+                            <h2 className="my-8 text-4xl text-center sticky top-0 w-full bg-gradient-to-b from-[#141414] lg:relative">Experience</h2>
                             <div className="w-4/5 lg:w-3/4 group">
                                 <div className="grid p-6 pl-8 rounded-lg md:grid-cols-8">
                                     <div className="hidden col-span-2 m-2 text-sm font-semibold uppercase md:block">
@@ -318,7 +320,7 @@ export const ScrollableSite: React.FC= () => {
 
                     <section id="Extracurriculars" className={`${ activeSection === "Extracurriculars" ? "opacity-100" : "opacity-0 pointer-events-none" }`}>
                         <div className="flex flex-col items-center justify-center mb-8 min-h-screen">
-                            <h2 className="my-8 text-4xl text-center">Extracurriculars</h2>
+                            <h2 className="my-8 text-4xl text-center sticky top-0 bg-gradient-to-b from-[#141414] w-full lg:relative">Extracurriculars</h2>
                             <div className="w-4/5 lg:w-3/4 group">
                                 <div className="grid p-6 pl-8 rounded-lg md:grid-cols-8">
                                     <div className="hidden col-span-2 m-2 text-sm font-semibold uppercase md:block">
