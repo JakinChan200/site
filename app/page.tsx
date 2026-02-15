@@ -10,10 +10,10 @@ import { FrontPage } from "../public/pages/FirstSite/frontPage";
 import { Experience } from "../public/pages/FirstSite/experience";
 import { Interests } from "../public/pages/FirstSite/interests";
 import { TestPage } from "../public/pages/testPage";
-import { ThemeButton } from "@/public/components/themeButton";
+import { ThemeButton } from "@/public/components/unusedComponents/themeButton";
 
 import { ScrollableSite } from "../public/pages/scrollableSite";
-import { NavMenu } from "@/public/components/navMenu";
+import { NavMenu } from "@/public/components/unusedComponents/navMenu";
 
 // import { Tag } from  '../public/components/tag';
 // import profilePicture from "/assets/Jakin.webp";
@@ -39,8 +39,8 @@ export default function Home() {
       <FrontPage/>
       <Education/>
       <Experience/>
-      <Interests/> */}
-      {/* <TestPage/> */}
+      <Interests/>
+      <TestPage/> */}
     </main>
   );
 }
