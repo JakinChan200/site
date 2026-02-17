@@ -119,10 +119,10 @@ export const ScrollableSite: React.FC= () => {
 
                     <section id="Education" className={`${ activeSection === "Education" ? "opacity-100" : "opacity-0 pointer-events-none" } flex flex-col items-center justify-center`}>
                         <div className="flex flex-col items-center justify-center w-full h-screen">
-                            <h2 className="my-8 text-4xl text-center sticky top-0 bg-gradient-to-b from-[#141414] w-full lg:relative">Education</h2>
+                            <h2 className="my-8 text-4xl text-center sticky top-0 bg-linear-to-b from-[#141414] w-full lg:relative">Education</h2>
                             <div className="flex items-center justify-center">
                                 <div className="flex flex-col flex-wrap mb-2 mr-2 tracking-wide lg:flex-row">
-                                    <div className="flex flex-col flex-shrink-0 p-4 pl-6 pr-10 text-lg text-left rounded-md lg:text-xl">
+                                    <div className="flex flex-col shrink-0 p-4 pl-6 pr-10 text-lg text-left rounded-md lg:text-xl">
                                         <div className="mb-1 font-semibold">
                                             M.S. in Computer Science
                                         </div>
@@ -135,7 +135,7 @@ export const ScrollableSite: React.FC= () => {
                                     </div>
                                     {/* <div className="hidden bg-red-200 2xl:block grow">
                                     </div> */}
-                                    <div className="flex flex-col flex-shrink-0 p-4 pl-6 pr-6 text-lg text-left rounded-md lg:text-xl">
+                                    <div className="flex flex-col shrink-0 p-4 pl-6 pr-6 text-lg text-left rounded-md lg:text-xl">
                                         <div className="mb-1 font-semibold">
                                             B.S. in Computer Science,
                                             <div className="inline ml-2 text-lg italic font-normal lg:text-lg">
@@ -156,7 +156,7 @@ export const ScrollableSite: React.FC= () => {
 
                     <section id="Projects" className={`${ activeSection === "Projects" ? "opacity-100" : "opacity-0 pointer-events-none" } `}>
                         <div className="flex flex-col items-center justify-center w-full mb-8">
-                            <h2 className="my-8 text-4xl text-center sticky top-0 bg-gradient-to-b from-[#141414] w-full lg:relative">Projects</h2>
+                            <h2 className="my-8 text-4xl text-center sticky top-0 bg-linear-to-b from-[#141414] w-full lg:relative">Projects</h2>
                             <div className="w-4/5 lg:w-3/4 group">
                                 <ProjectBlock
                                     link="https://github.com/JakinChan200/site"
@@ -222,7 +222,7 @@ export const ScrollableSite: React.FC= () => {
 
                     <section id="Experience" className={`${ activeSection === "Experience" ? "opacity-100" : "opacity-0 pointer-events-none" } `}>
                         <div className="flex flex-col items-center justify-center w-full mb-2 min-h-screen">
-                            <h2 className="my-8 text-4xl text-center sticky top-0 w-full bg-gradient-to-b from-[#141414] lg:relative">Experience</h2>
+                            <h2 className="my-8 text-4xl text-center sticky top-0 w-full bg-linear-to-b from-[#141414] lg:relative">Experience</h2>
                             <div className="w-4/5 lg:w-3/4 group">
                                 <div className="grid p-6 pl-8 rounded-lg md:grid-cols-8">
                                     <div className="hidden col-span-2 m-2 text-sm font-semibold uppercase md:block">
@@ -270,7 +270,7 @@ export const ScrollableSite: React.FC= () => {
 
                     <section id="Extracurriculars" className={`${ activeSection === "Extracurriculars" ? "opacity-100" : "opacity-0 pointer-events-none" }`}>
                         <div className="flex flex-col items-center justify-center mb-8 min-h-screen">
-                            <h2 className="my-8 text-4xl text-center sticky top-0 bg-gradient-to-b from-[#141414] w-full lg:relative">Extracurriculars</h2>
+                            <h2 className="my-8 text-4xl text-center sticky top-0 bg-linear-to-b from-[#141414] w-full lg:relative">Extracurriculars</h2>
                             <div className="w-4/5 lg:w-3/4 group">
                                 <div className="grid p-6 pl-8 rounded-lg md:grid-cols-8">
                                     <div className="hidden col-span-2 m-2 text-sm font-semibold uppercase md:block">
