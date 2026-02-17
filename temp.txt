@@ -1,3 +1,117 @@
+Old Project links
+                                <Link href="https://github.com/JakinChan200/site" target="_blank" passHref={true}>
+                                    <div className="p-6 pl-8 rounded-lg hover:!opacity-100 lg:group-hover:opacity-50 group transition-all hover:border-gray-500 border-2 border-transparent grid md:grid-cols-8">
+                                        <div className="hidden col-span-2 m-2 text-sm font-semibold uppercase md:block">
+                                            Nov 2024 - Jan 2025
+                                        </div>
+                                        <div className="col-span-6 col-start-1 md:col-start-3 grid-cols-subgrid">
+                                            <div className="text-2xl font-medium">
+                                                Personal Site
+                                            </div>
+                                            <div className="mt-3 tracking-wider text-md text-slate-200">
+                                                A personal resume website.
+                                            </div>
+                                            <div className="flex flex-row flex-wrap mt-2 mb-1.5">
+                                                <TechStackTag text="Next.js"/>
+                                                <TechStackTag text="Tailwind CSS"/>
+                                                <TechStackTag text="TypeScript"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </Link>
+                                                                <Link href="https://github.com/JakinChan200/2048" target="_blank" passHref={true}>
+                                    <div className="p-6 pl-8 rounded-lg hover:!opacity-100 lg:group-hover:opacity-50 group transition-all hover:border-gray-500 border-2 border-transparent grid md:grid-cols-8">
+                                        <div className="hidden col-span-2 m-2 text-sm font-semibold uppercase md:block">
+                                            Jan 2024 - Jan 2025
+                                        </div>
+                                        <div className="col-span-6 col-start-3 grid-cols-subgrid">
+                                            <div className="text-2xl font-medium">
+                                                2048
+                                            </div>
+                                            <div className="mt-3 tracking-wider text-md text-slate-200">
+                                                In a team, built a GUI to play the hit game 2048 or have a bot play for you. Running multi-threaded min-max algorithm, the software returns and plays the move with the highest chances of victory based on the developed heuristic.
+                                            </div>
+                                            <div className="flex flex-row flex-wrap mt-2 mb-1.5">
+                                                <TechStackTag text="Python"/>
+                                                <TechStackTag text="C++"/>
+                                                <TechStackTag text="ctypes"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </Link>
+                                <Link href="https://github.com/JakinChan200/CS206" target="_blank" passHref={true}>
+                                    <div className="p-6 pl-8 rounded-lg hover:!opacity-100 lg:group-hover:opacity-50 group transition-all hover:border-gray-500 border-2 border-transparent grid md:grid-cols-8">
+                                        <div className="hidden col-span-2 m-2 text-sm font-semibold uppercase md:block">
+                                            Mar 2024
+                                        </div>
+                                        <div className="col-span-6 col-start-3 grid-cols-subgrid">
+                                            <div className="text-2xl font-medium">
+                                                Test Suite Creation Based on Coverage Criteria
+                                            </div>
+                                            <div className="mt-3 tracking-wider text-md text-slate-200">
+                                                In a team, given a piece of code, and a suite of test cases, minimize the number of test cases while maintaining full coverage. This reduces the time impact of continuous testing.
+                                            </div>
+                                            <div className="flex flex-row flex-wrap mt-2 mb-1.5">
+                                                <div className="inline-block px-3 py-1 mt-1.5 mr-1.5 text-sm font-medium text-red-200 bg-green-500 rounded-full">
+                                                    Class Project
+                                                </div>
+                                                <TechStackTag text="C++"/>
+                                                <TechStackTag text="C"/>
+                                                <TechStackTag text="GCOV"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </Link>
+                                <Link href="https://github.com/liz-areizaga/summarizer" target="_blank" passHref={true}>
+                                    <div className="p-6 pl-8 rounded-lg hover:!opacity-100 lg:group-hover:opacity-50 group transition-all hover:border-gray-500 border-2 border-transparent grid md:grid-cols-8">
+                                        <div className="hidden col-span-2 m-2 text-sm font-semibold uppercase md:block">
+                                            Aug 2023
+                                        </div>
+                                        <div className="col-span-6 col-start-3 grid-cols-subgrid">
+                                            <div className="text-2xl font-medium">
+                                                Summarizer
+                                            </div>
+                                            <div className="mt-3 tracking-wider text-md text-slate-200">
+                                                In a team, built a Chat-GPT wrapper to summarize content given a YouTube link or text. Dark mode included.
+                                            </div>
+                                            <div className="flex flex-row flex-wrap mt-2 mb-1.5">
+                                                <TechStackTag text="React"/>
+                                                <TechStackTag text="Tailwind CSS"/>
+                                                <TechStackTag text="TypeScript"/>
+                                                <TechStackTag text="Axios"/>
+                                                <TechStackTag text="Flask"/>
+                                                <TechStackTag text="Python"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </Link>
+                                <Link href="https://github.com/JakinChan200/CS205Project2" target="_blank" passHref={true}>
+                                    <div className="p-6 pl-8 rounded-lg hover:!opacity-100 lg:group-hover:opacity-50 group transition-all hover:border-gray-500 border-2 border-transparent grid md:grid-cols-8">
+                                        <div className="hidden col-span-2 m-2 text-sm font-semibold uppercase md:block">
+                                            May 2023 - June 2023
+                                        </div>
+                                        <div className="col-span-6 col-start-3 grid-cols-subgrid">
+                                            <div className="text-2xl font-medium">
+                                                Feature Selection
+                                            </div>
+                                            <div className="mt-3 tracking-wider text-md text-slate-200">
+                                                Implemented leave-one-out feature selection to process and develop a classifier.
+                                            </div>
+                                            <div className="flex flex-row flex-wrap mt-2 mb-1.5">
+                                                <div className="inline-block px-3 py-1 mt-1.5 mr-1.5 text-sm font-medium text-red-200 bg-green-500 rounded-full">
+                                                    Class Project
+                                                </div>
+                                                <TechStackTag text="C++"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </Link>
+      
+      
+      
+      
+      
+      
       <div className="flex flex-wrap flex-col justify-center items-center h-screen">
         <div className="w-3/4 self-center text-center font-extrabold text-4xl">
           Education

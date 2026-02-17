@@ -2,10 +2,9 @@
 /** @type {import('next').NextConfig} */
 import React from "react";
 import Link from 'next/link'
-import Image from "next/image";
 import { useState } from 'react';
 import { useEffect } from 'react';
-import TechStackTag from '../components/techStackTag';
+import ProjectBlock from "../components/projectBlock";
 
 export const ScrollableSite: React.FC= () => {
     const [activeSection, setActiveSection] = useState("Introduction");
@@ -31,9 +30,9 @@ export const ScrollableSite: React.FC= () => {
   
     return (
         <div className="tracking-wide select-none text-slate-200">
-            <div className='flex flex-row justify-center'> {/**:bg-background*/}
-                <div className='flex justify-end w-0 lg:w-1/4'>
-                    <div className="*:uppercase font-semibold fixed hidden flex-col *:m-8 text-xl lg:flex w-1/8 *:cursor-pointer justify-center h-screen"> {/*backdrop-filter backdrop-blur-sm bg-opacity-80*/}
+            <div className='flex flex-row justify-center'> {/*:bg-background} */} {/*Elements inside will go horizontally*/}
+                <div className='flex justify-end w-0 lg:w-1/4'> {/*Decides the rightmost position of the navbar by its size as this div is left justified, then justify the text to the right*/}
+                    <div className="*:uppercase font-semibold fixed hidden flex-col *:m-8 text-xl lg:flex w-1/8 *:cursor-pointer justify-center h-screen"> {/*backdrop-filter backdrop-blur-sm bg-opacity-80*/} {/*center vertically */}
                         <Link href="#Introduction"
                             className={`${
                                 activeSection === "Introduction" ? "text-slate-200 transform translate-x-7" : "text-slate-600"
@@ -120,7 +119,7 @@ export const ScrollableSite: React.FC= () => {
 
                     <section id="Education" className={`${ activeSection === "Education" ? "opacity-100" : "opacity-0 pointer-events-none" } flex flex-col items-center justify-center`}>
                         <div className="flex flex-col items-center justify-center w-full h-screen">
-                            <h2 className="my-8 text-4xl text-center">Education</h2>
+                            <h2 className="my-8 text-4xl text-center sticky top-0 bg-gradient-to-b from-[#141414] w-full lg:relative">Education</h2>
                             <div className="flex items-center justify-center">
                                 <div className="flex flex-col flex-wrap mb-2 mr-2 tracking-wide lg:flex-row">
                                     <div className="flex flex-col flex-shrink-0 p-4 pl-6 pr-10 text-lg text-left rounded-md lg:text-xl">
@@ -157,120 +156,73 @@ export const ScrollableSite: React.FC= () => {
 
                     <section id="Projects" className={`${ activeSection === "Projects" ? "opacity-100" : "opacity-0 pointer-events-none" } `}>
                         <div className="flex flex-col items-center justify-center w-full mb-8">
-                            <h2 className="my-8 text-4xl text-center">Projects</h2>
+                            <h2 className="my-8 text-4xl text-center sticky top-0 bg-gradient-to-b from-[#141414] w-full lg:relative">Projects</h2>
                             <div className="w-4/5 lg:w-3/4 group">
-                                <Link href="https://github.com/JakinChan200/site" target="_blank" passHref={true}>
-                                    <div className="p-6 pl-8 rounded-lg hover:!opacity-100 group-hover:opacity-50 group transition-all hover:border-gray-500 border-2 border-transparent grid md:grid-cols-8">
-                                        <div className="hidden col-span-2 m-2 text-sm font-semibold uppercase md:block">
-                                            Nov 2024 - Present
-                                        </div>
-                                        <div className="col-span-6 col-start-1 md:col-start-3 grid-cols-subgrid">
-                                            <div className="text-2xl font-medium">
-                                                Personal Site
-                                            </div>
-                                            <div className="mt-3 tracking-wider text-md text-slate-200">
-                                                A personal resume website.
-                                            </div>
-                                            <div className="flex flex-row flex-wrap mt-2 mb-1.5">
-                                                <TechStackTag text="Next.js"/>
-                                                <TechStackTag text="Tailwind CSS"/>
-                                                <TechStackTag text="TypeScript"/>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </Link>
-                                <Link href="https://github.com/JakinChan200/2048" target="_blank" passHref={true}>
-                                    <div className="p-6 pl-8 rounded-lg hover:!opacity-100 group-hover:opacity-50 group transition-all hover:border-gray-500 border-2 border-transparent grid md:grid-cols-8">
-                                        <div className="hidden col-span-2 m-2 text-sm font-semibold uppercase md:block">
-                                            Jan 2024 - Nov 2024
-                                        </div>
-                                        <div className="col-span-6 col-start-3 grid-cols-subgrid">
-                                            <div className="text-2xl font-medium">
-                                                2048
-                                            </div>
-                                            <div className="mt-3 tracking-wider text-md text-slate-200">
-                                                In a team, built a GUI to play the hit game 2048 or have a bot play for you. Running multi-threaded min-max algorithm, the software returns and plays the move with the highest chances of victory based on the developed heuristic.
-                                            </div>
-                                            <div className="flex flex-row flex-wrap mt-2 mb-1.5">
-                                                <TechStackTag text="Python"/>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </Link>
-                                <Link href="https://github.com/JakinChan200/CS206" target="_blank" passHref={true}>
-                                    <div className="p-6 pl-8 rounded-lg hover:!opacity-100 group-hover:opacity-50 group transition-all hover:border-gray-500 border-2 border-transparent grid md:grid-cols-8">
-                                        <div className="hidden col-span-2 m-2 text-sm font-semibold uppercase md:block">
-                                            Mar 2024
-                                        </div>
-                                        <div className="col-span-6 col-start-3 grid-cols-subgrid">
-                                            <div className="text-2xl font-medium">
-                                                Test Suite Creation Based on Coverage Criteria
-                                            </div>
-                                            <div className="mt-3 tracking-wider text-md text-slate-200">
-                                                In a team, given a piece of code, and a suite of test cases, minimize the number of test cases while maintaining full coverage. This reduces the time impact of continuous testing.
-                                            </div>
-                                            <div className="flex flex-row flex-wrap mt-2 mb-1.5">
-                                                <div className="inline-block px-3 py-1 mt-1.5 mr-1.5 text-sm font-medium text-red-200 bg-green-500 rounded-full">
-                                                    Class Project
-                                                </div>
-                                                <TechStackTag text="C++"/>
-                                                <TechStackTag text="C"/>
-                                                <TechStackTag text="GCOV"/>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </Link>
-                                <Link href="https://github.com/liz-areizaga/summarizer" target="_blank" passHref={true}>
-                                    <div className="p-6 pl-8 rounded-lg hover:!opacity-100 group-hover:opacity-50 group transition-all hover:border-gray-500 border-2 border-transparent grid md:grid-cols-8">
-                                        <div className="hidden col-span-2 m-2 text-sm font-semibold uppercase md:block">
-                                            Aug 2023
-                                        </div>
-                                        <div className="col-span-6 col-start-3 grid-cols-subgrid">
-                                            <div className="text-2xl font-medium">
-                                                Summarizer
-                                            </div>
-                                            <div className="mt-3 tracking-wider text-md text-slate-200">
-                                                In a team, built a Chat-GPT wrapper to summarize content given a YouTube link or text. Dark mode included.
-                                            </div>
-                                            <div className="flex flex-row flex-wrap mt-2 mb-1.5">
-                                                <TechStackTag text="React"/>
-                                                <TechStackTag text="Tailwind CSS"/>
-                                                <TechStackTag text="TypeScript"/>
-                                                <TechStackTag text="Axios"/>
-                                                <TechStackTag text="Flask"/>
-                                                <TechStackTag text="Python"/>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </Link>
-                                <Link href="https://github.com/JakinChan200/CS205Project2" target="_blank" passHref={true}>
-                                    <div className="p-6 pl-8 rounded-lg hover:!opacity-100 group-hover:opacity-50 group transition-all hover:border-gray-500 border-2 border-transparent grid md:grid-cols-8">
-                                        <div className="hidden col-span-2 m-2 text-sm font-semibold uppercase md:block">
-                                            May 2023 - June 2023
-                                        </div>
-                                        <div className="col-span-6 col-start-3 grid-cols-subgrid">
-                                            <div className="text-2xl font-medium">
-                                                Feature Selection
-                                            </div>
-                                            <div className="mt-3 tracking-wider text-md text-slate-200">
-                                                Implemented leave-one-out feature selection to process and develop a classifier.
-                                            </div>
-                                            <div className="flex flex-row flex-wrap mt-2 mb-1.5">
-                                                <div className="inline-block px-3 py-1 mt-1.5 mr-1.5 text-sm font-medium text-red-200 bg-green-500 rounded-full">
-                                                    Class Project
-                                                </div>
-                                                <TechStackTag text="C++"/>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </Link>
+                                <ProjectBlock
+                                    link="https://github.com/JakinChan200/site"
+                                    date="Nov 2024 - Jan 2025"
+                                    title="Personal Site"
+                                    description="A personal resume website."
+                                    tags={[
+                                        "Next.js",
+                                        "Tailwind CSS",
+                                        "Typescript"
+                                    ]}
+                                />
+                                <ProjectBlock
+                                    link="https://github.com/JakinChan200/2048"
+                                    date="Jan 2024 - Jan 2025"
+                                    title="2048"
+                                    description="In a team, built a GUI to play the hit game 2048 or have a bot play for you. Running multi-threaded min-max algorithm, the software returns and plays the move with the highest chances of victory based on the developed heuristic."
+                                    tags={[
+                                        "Python",
+                                        "C++",
+                                        "ctypes"
+                                    ]}
+                                />
+                                <ProjectBlock
+                                    link="https://github.com/JakinChan200/CS206"
+                                    date="Mar 2024"
+                                    title="Test Suite Creation Based on Coverage Criteria"
+                                    description="In a team, given a piece of code, and a suite of test cases, minimize the number of test cases while maintaining full coverage. This reduces the time impact of continuous testing."
+                                    classProject={true}
+                                    tags={[
+                                        "C++",
+                                        "C",
+                                        "GCOV"
+                                    ]}
+                                />
+                                <ProjectBlock
+                                    link="https://github.com/liz-areizaga/summarizer"
+                                    date="Aug 2023"
+                                    title="Summarizer"
+                                    description="In a team, built a Chat-GPT wrapper to summarize content given a YouTube link or text. Dark mode included."
+                                    tags={[
+                                        "React",
+                                        "Tailwind CSS",
+                                        "TypeScript",
+                                        "Axios",
+                                        "Flask",
+                                        "Python"
+                                    ]}
+                                />
+                                <ProjectBlock
+                                    link="https://github.com/JakinChan200/CS205Project2"
+                                    date="May 2023 - June 2023"
+                                    title="Feature Selection"
+                                    description="Implemented leave-one-out feature selection to process and develop a classifier."
+                                    classProject={true}
+                                    tags={[
+                                        "C++"
+                                    ]}
+                                />
                             </div>
                         </div>
                     </section>
 
                     <section id="Experience" className={`${ activeSection === "Experience" ? "opacity-100" : "opacity-0 pointer-events-none" } `}>
                         <div className="flex flex-col items-center justify-center w-full mb-2 min-h-screen">
-                            <h2 className="my-8 text-4xl text-center">Experience</h2>
+                            <h2 className="my-8 text-4xl text-center sticky top-0 w-full bg-gradient-to-b from-[#141414] lg:relative">Experience</h2>
                             <div className="w-4/5 lg:w-3/4 group">
                                 <div className="grid p-6 pl-8 rounded-lg md:grid-cols-8">
                                     <div className="hidden col-span-2 m-2 text-sm font-semibold uppercase md:block">
@@ -318,7 +270,7 @@ export const ScrollableSite: React.FC= () => {
 
                     <section id="Extracurriculars" className={`${ activeSection === "Extracurriculars" ? "opacity-100" : "opacity-0 pointer-events-none" }`}>
                         <div className="flex flex-col items-center justify-center mb-8 min-h-screen">
-                            <h2 className="my-8 text-4xl text-center">Extracurriculars</h2>
+                            <h2 className="my-8 text-4xl text-center sticky top-0 bg-gradient-to-b from-[#141414] w-full lg:relative">Extracurriculars</h2>
                             <div className="w-4/5 lg:w-3/4 group">
                                 <div className="grid p-6 pl-8 rounded-lg md:grid-cols-8">
                                     <div className="hidden col-span-2 m-2 text-sm font-semibold uppercase md:block">
