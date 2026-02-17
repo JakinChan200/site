@@ -22,7 +22,7 @@ function ProjectBlock({link, title, date, description, classProject = false, tag
                 <div className="hidden col-span-2 m-2 text-sm font-semibold uppercase md:block">
                     {date}
                 </div>
-                <div className="col-span-6 col-start-3 grid-cols-subgrid">
+                <div className="col-span-6 col-start-1 md:col-start-3 grid-cols-subgrid">
                     <div className="text-2xl font-medium">
                         {title}
                     </div>
@@ -30,7 +30,6 @@ function ProjectBlock({link, title, date, description, classProject = false, tag
                         {description}
                     </div>
                     <div className="flex flex-row flex-wrap mt-2 mb-1.5">
-                        
                         {classProject && <TechStackTag color="green" text="Class Project"/>}
 
                         {tags.map((tagText, index) => (
